@@ -1,0 +1,76 @@
+@import '/includes/header/header.css';
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.application-notice {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 10000;
+    max-width: min(360px, calc(100vw - 32px));
+    padding: 16px 20px;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.35;
+    box-shadow: 0 16px 40px rgba(20, 21, 21, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(16px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.application-notice_visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.application-notice_success {
+    background: var(--color-green);
+}
+
+.application-notice_error {
+    background: #d84f4f;
+}
+
+button:disabled,
+.popup-submit:disabled,
+.tarif__button:disabled {
+    cursor: wait;
+    opacity: 0.7;
+    transform: none !important;
+}
+
+@media (max-width: 600px) {
+    .application-notice {
+        right: 16px;
+        bottom: 16px;
+        left: 16px;
+        max-width: none;
+        font-size: 14px;
+    }
+}
+
+:root {
+    --color-orange: #F79B45;
+    --color-green: #9AC557;
+    --color-sky: #A2D9F7;
+    --color-blue: #69B8E2;
+    --color-purple: #B1A4E2;
+    --color-dark: #141515;
+    
+    --button-border-radius: 10px;
+    --font-bum-bum: 'Ura Bum Bum SP', sans-serif
+}

@@ -1,4 +1,7 @@
 @import '/includes/header/header.css';
+@import '/includes/inf-text/inf-text.css';
+@import '/includes/service_main/service_main.css';
+@import '/includes/popap-record/popap-record.css';
 
 
 html {
@@ -9,10 +12,19 @@ body {
     font-family: 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
+
+    margin: 15px 0 0;
 }
 
+.popap-record-btn {
+    background-color: #3FACE2;
+    color: white;
+    border-radius: 10px;
+}
+.popap-record-btn:hover {
+    background-color: #4bc2fe;
+}
 .application-notice {
     position: fixed;
     right: 24px;

@@ -1,0 +1,22 @@
+.announcement-block {
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.announcement-block p {
+    margin: 0 0 15px 0;
+}
+
+.announcement-block p:last-child {
+    margin-bottom: 0;
+}
+
+.announcement-title {
+    font-weight: bold;
+}
+

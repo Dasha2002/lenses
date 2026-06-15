@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <!-- ============================================
          МЕТА-ТЕГИ И БАЗОВАЯ КОНФИГУРАЦИЯ
@@ -11,10 +12,10 @@
     <meta name="description" content="Купить линзы и очки. &quot;Линз-Очки&quot; - сеть салонов оптики в СПб. Большой ассортимент качественных средств коррекции зрения по самой честной цене.">
     <meta name="keywords" content="сеть салонов оптики линз-очки, салоны оптики санкт-петербург, салоны оптики спб">
     <title>Купить линзы и очки в салоне оптики &quot;Линз-Очки&quot; в Санкт-Петербурге</title>
-    
+
     <!-- Иконка сайта -->
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    
+
     <!-- Верификация поисковых систем -->
     <meta name="google-site-verification" content="HPDtHFSk3c2c20zIdf50z1MDPwT5BJpt6pkbybizZjk">
     <meta name="google-site-verification" content="Nfg-Pv2slTV9VWMW9l0NCI76iSvpvXZe9tu_lwu1OCE">
@@ -58,7 +59,7 @@
     <link rel="stylesheet" href="/t/v10966/images/css/new_style/lens.css">
     <link rel="stylesheet" href="/t/v10966/images/css/new_style/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    
+
     <!-- Дополнительные стили -->
     <link rel="stylesheet" href="/t/v10966/images/css/seo_addons.scss.css">
     <link rel="stylesheet" href="/t/v10966/images/css/site_addons.scss.css">
@@ -72,38 +73,42 @@
     ============================================= -->
     <!-- VK Retargeting -->
     <script type="text/javascript">
-        !function(){
-            var t=document.createElement("script");
-            t.type="text/javascript",t.async=!0,
-            t.src='https://vk.com/js/api/openapi.js?169',
-            t.onload=function(){
-                VK.Retargeting.Init("VK-RTRG-1692393-doLZP"),
-                VK.Retargeting.Hit()
-            },
-            document.head.appendChild(t)
+        ! function() {
+            var t = document.createElement("script");
+            t.type = "text/javascript", t.async = !0,
+                t.src = 'https://vk.com/js/api/openapi.js?169',
+                t.onload = function() {
+                    VK.Retargeting.Init("VK-RTRG-1692393-doLZP"),
+                        VK.Retargeting.Hit()
+                },
+                document.head.appendChild(t)
         }();
     </script>
     <noscript>
-        <img src="https://vk.com/rtrg?p=VK-RTRG-1692393-doLZP" style="position:fixed; left:-999px;" alt=""/>
+        <img src="https://vk.com/rtrg?p=VK-RTRG-1692393-doLZP" style="position:fixed; left:-999px;" alt="" />
     </noscript>
 
     <!-- Яндекс.Метрика -->
     <script type="text/javascript">
-        (function(m,e,t,r,i,k,a){
-            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();
+        (function(m, e, t, r, i, k, a) {
+            m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
             for (var j = 0; j < document.scripts.length; j++) {
-                if (document.scripts[j].src === r) { return; }
+                if (document.scripts[j].src === r) {
+                    return;
+                }
             }
-            k=e.createElement(t),a=e.getElementsByTagName(t)[0],
-            k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0],
+                k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
         })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-        
+
         ym(99040893, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
         });
     </script>
     <noscript>
@@ -122,11 +127,19 @@
             --font2: 'Rubik', sans-serif;
         }
 
-        .gr_block_hide_class {display: none !important;}
+        .gr_block_hide_class {
+            display: none !important;
+        }
+
         .card-page .kinds-block .kinds_slider .tpl-rating-block,
-        .product-list .product-item .tpl-stars {display: none !important;}
+        .product-list .product-item .tpl-stars {
+            display: none !important;
+        }
+
         .card-page .kinds-block .kinds_slider .gr-product-anonce,
-        .product-list .product-item .gr-product-anonce {display: none !important;}
+        .product-list .product-item .gr-product-anonce {
+            display: none !important;
+        }
 
         @font-face {
             font-family: 'icomoon';
@@ -140,10 +153,10 @@
             font-family: "Comfortaa";
             src: url("/g/fonts/comfortaa/comfortaa-l.eot");
             src: url("/g/fonts/comfortaa/comfortaa-l.eot?#iefix") format("embedded-opentype"),
-                 url("/g/fonts/comfortaa/comfortaa-l.woff2#comfortaa") format("woff2"),
-                 url("/g/fonts/comfortaa/comfortaa-l.woff#comfortaa") format("woff"),
-                 url("/g/fonts/comfortaa/comfortaa-l.ttf#comfortaa") format("truetype"),
-                 url("/g/fonts/comfortaa/comfortaa-l.svg#comfortaa") format("svg");
+                url("/g/fonts/comfortaa/comfortaa-l.woff2#comfortaa") format("woff2"),
+                url("/g/fonts/comfortaa/comfortaa-l.woff#comfortaa") format("woff"),
+                url("/g/fonts/comfortaa/comfortaa-l.ttf#comfortaa") format("truetype"),
+                url("/g/fonts/comfortaa/comfortaa-l.svg#comfortaa") format("svg");
             font-weight: 300;
             font-style: normal;
         }
@@ -152,10 +165,10 @@
             font-family: "Comfortaa";
             src: url("/g/fonts/comfortaa/comfortaa-r.eot");
             src: url("/g/fonts/comfortaa/comfortaa-r.eot?#iefix") format("embedded-opentype"),
-                 url("/g/fonts/comfortaa/comfortaa-r.woff2#comfortaa") format("woff2"),
-                 url("/g/fonts/comfortaa/comfortaa-r.woff#comfortaa") format("woff"),
-                 url("/g/fonts/comfortaa/comfortaa-r.ttf#comfortaa") format("truetype"),
-                 url("/g/fonts/comfortaa/comfortaa-r.svg#comfortaa") format("svg");
+                url("/g/fonts/comfortaa/comfortaa-r.woff2#comfortaa") format("woff2"),
+                url("/g/fonts/comfortaa/comfortaa-r.woff#comfortaa") format("woff"),
+                url("/g/fonts/comfortaa/comfortaa-r.ttf#comfortaa") format("truetype"),
+                url("/g/fonts/comfortaa/comfortaa-r.svg#comfortaa") format("svg");
             font-weight: 400;
             font-style: normal;
         }
@@ -164,10 +177,10 @@
             font-family: "Comfortaa";
             src: url("/g/fonts/comfortaa/comfortaa-b.eot");
             src: url("/g/fonts/comfortaa/comfortaa-b.eot?#iefix") format("embedded-opentype"),
-                 url("/g/fonts/comfortaa/comfortaa-b.woff2#comfortaa") format("woff2"),
-                 url("/g/fonts/comfortaa/comfortaa-b.woff#comfortaa") format("woff"),
-                 url("/g/fonts/comfortaa/comfortaa-b.ttf#comfortaa") format("truetype"),
-                 url("/g/fonts/comfortaa/comfortaa-b.svg#comfortaa") format("svg");
+                url("/g/fonts/comfortaa/comfortaa-b.woff2#comfortaa") format("woff2"),
+                url("/g/fonts/comfortaa/comfortaa-b.woff#comfortaa") format("woff"),
+                url("/g/fonts/comfortaa/comfortaa-b.ttf#comfortaa") format("truetype"),
+                url("/g/fonts/comfortaa/comfortaa-b.svg#comfortaa") format("svg");
             font-weight: 700;
             font-style: normal;
         }
@@ -180,7 +193,7 @@
 
 <body class="site gr_hide_onload gr_site_version_2 gr_site_new_styles">
     <div class="site__wrapper">
-        
+
         <!-- ============================================
              ФИКСИРОВАННАЯ ПАНЕЛЬ НАВИГАЦИИ
         ============================================= -->
@@ -351,8 +364,8 @@
         <div class="burger_menu_container">
             <div class="burger_menu_close">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 1L1 15" stroke="black"/>
-                    <path d="M1 1L15 15" stroke="black"/>
+                    <path d="M15 1L1 15" stroke="black" />
+                    <path d="M1 1L15 15" stroke="black" />
                 </svg>
             </div>
             <div class="header_burgers">
@@ -642,7 +655,7 @@
         ============================================= -->
         <div class="site-container">
             <div class="site-container__inner">
-                
+
                 <!-- ============================================
                      ПРИВЕТСТВЕННЫЙ БЛОК И СЛАЙДЕР
                 ============================================= -->
@@ -664,7 +677,7 @@
                             </div>
                             <img src="/t/v10966/images/custom_img/welcome_contant.png" alt="">
                         </div>
-                        
+
                         <!-- Главный слайдер -->
                         <div class="welcome_contant_swiper swiper">
                             <div class="swiper-wrapper">
@@ -792,7 +805,7 @@
                                                     <div class="product-list-titles__item">Кол-во</div>
                                                 </div>
                                                 <div class="product-list thumbs main_blocks_list main_columns_4" data-autoplay="0" data-popup-form="/-/x-api/v1/public/?method=form/postform&param[form_id]=7489507&param[tpl]=global:shop2.form.minimal.tpl&param[hide_title]=0&param[placeholdered_fields]=0" data-info-popup-form="/-/x-api/v1/public/?method=form/postform&param[form_id]=7490907&param[tpl]=global:shop2.form.minimal.tpl&param[hide_title]=0&param[placeholdered_fields]=0" data-images-view="0" data-main-items="4" data-images-size="1">
-                                                    
+
                                                     <!-- Товар 1 -->
                                                     <div class="product-item-wrap">
                                                         <form method="post" action="/magazin?mode=cart&amp;action=add" accept-charset="utf-8" class="shop2-product-item product-item">
@@ -882,9 +895,9 @@
                                                                                         <button class="shop-product-btn type-2 buy" type="submit" data-url="/magazin/product/1-day-acuvue-moist-multifocal">
                                                                                             <div>
                                                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 15.75C3.75 14.5074 4.75736 13.5 6 13.5C7.24264 13.5 8.25 14.5074 8.25 15.75C8.25 16.9926 7.24264 18 6 18C4.75736 18 3.75 16.9926 3.75 15.75ZM6 15C5.58579 15 5.25 15.3358 5.25 15.75C5.25 16.1642 5.58579 16.5 6 16.5C6.41421 16.5 6.75 16.1642 6.75 15.75C6.75 15.3358 6.41421 15 6 15Z" fill="white"/>
-                                                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 15.75C12.75 14.5074 13.7574 13.5 15 13.5C16.2426 13.5 17.25 14.5074 17.25 15.75C17.25 16.9926 16.2426 18 15 18C13.7574 18 12.75 16.9926 12.75 15.75ZM15 15C14.5858 15 14.25 15.3358 14.25 15.75C14.25 16.1642 14.5858 16.5 15 16.5C15.4142 16.5 15.75 16.1642 15.75 15.75C15.75 15.3358 15.4142 15 15 15Z" fill="white"/>
-                                                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.75C0 0.335786 0.335786 0 0.75 0H2.43864C3.56681 0.00170906 4.51928 0.83864 4.66609 1.95719C4.66608 1.95708 4.66611 1.95729 4.66609 1.95719L4.90265 3.75H17.25C17.4747 3.75 17.6876 3.85077 17.8301 4.02457C17.9725 4.19838 18.0295 4.4269 17.9854 4.64726L16.7256 10.9386C16.7256 10.939 16.7255 10.9393 16.7254 10.9396C16.7254 10.9397 16.7254 10.9396 16.7254 10.9396C16.5132 12.0055 15.5695 12.7671 14.4835 12.75H6.56534C5.43025 12.7579 4.46682 11.9189 4.31894 10.7931M4.31894 10.7931L3.17894 2.15311C3.13007 1.78036 2.81272 1.5008 2.43683 1.5H0.75C0.335786 1.5 0 1.16421 0 0.75M5.10056 5.25L5.80606 10.5969C5.85531 10.9726 6.17719 11.2532 6.55614 11.25L6.5625 11.25L14.49 11.25L14.5044 11.2501C14.8676 11.2571 15.1836 11.0027 15.2544 10.6464L15.2546 10.6452L16.3349 5.25H5.10056Z" fill="white"/>
+                                                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 15.75C3.75 14.5074 4.75736 13.5 6 13.5C7.24264 13.5 8.25 14.5074 8.25 15.75C8.25 16.9926 7.24264 18 6 18C4.75736 18 3.75 16.9926 3.75 15.75ZM6 15C5.58579 15 5.25 15.3358 5.25 15.75C5.25 16.1642 5.58579 16.5 6 16.5C6.41421 16.5 6.75 16.1642 6.75 15.75C6.75 15.3358 6.41421 15 6 15Z" fill="white" />
+                                                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 15.75C12.75 14.5074 13.7574 13.5 15 13.5C16.2426 13.5 17.25 14.5074 17.25 15.75C17.25 16.9926 16.2426 18 15 18C13.7574 18 12.75 16.9926 12.75 15.75ZM15 15C14.5858 15 14.25 15.3358 14.25 15.75C14.25 16.1642 14.5858 16.5 15 16.5C15.4142 16.5 15.75 16.1642 15.75 15.75C15.75 15.3358 15.4142 15 15 15Z" fill="white" />
+                                                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.75C0 0.335786 0.335786 0 0.75 0H2.43864C3.56681 0.00170906 4.51928 0.83864 4.66609 1.95719C4.66608 1.95708 4.66611 1.95729 4.66609 1.95719L4.90265 3.75H17.25C17.4747 3.75 17.6876 3.85077 17.8301 4.02457C17.9725 4.19838 18.0295 4.4269 17.9854 4.64726L16.7256 10.9386C16.7256 10.939 16.7255 10.9393 16.7254 10.9396C16.7254 10.9397 16.7254 10.9396 16.7254 10.9396C16.5132 12.0055 15.5695 12.7671 14.4835 12.75H6.56534C5.43025 12.7579 4.46682 11.9189 4.31894 10.7931M4.31894 10.7931L3.17894 2.15311C3.13007 1.78036 2.81272 1.5008 2.43683 1.5H0.75C0.335786 1.5 0 1.16421 0 0.75M5.10056 5.25L5.80606 10.5969C5.85531 10.9726 6.17719 11.2532 6.55614 11.25L6.5625 11.25L14.49 11.25L14.5044 11.2501C14.8676 11.2571 15.1836 11.0027 15.2544 10.6464L15.2546 10.6452L16.3349 5.25H5.10056Z" fill="white" />
                                                                                                 </svg>
                                                                                             </div>
                                                                                         </button>
@@ -907,7 +920,7 @@
                                                                                             <svg class="gr-svg-icon gr_small_icon">
                                                                                                 <use xlink:href="#icon_shop_compare_add_small"></use>
                                                                                             </svg>
-                                                                                            <input type="checkbox" value="475316107"/>
+                                                                                            <input type="checkbox" value="475316107" />
                                                                                         </label>
                                                                                     </div>
                                                                                     <div class="gr-favorite-btn-wrapper">
@@ -948,7 +961,7 @@
                                                                 <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                                                                     <meta itemprop="price" content="3018">
                                                                     <meta itemprop="priceCurrency" content="RUB">
-                                                                    <link itemprop="availability" href="https://schema.org/InStock"/>
+                                                                    <link itemprop="availability" href="https://schema.org/InStock" />
                                                                     <link itemprop="url" href="https://linz-ochki.ru/magazin/product/1-day-acuvue-moist-multifocal">
                                                                 </div>
                                                             </div>
@@ -1150,7 +1163,9 @@
                 <div class="reviews_swiper swiper">
                     <div class="slider_header">
                         <h2>Отзывы о нас</h2>
-                        <a href="/reviews"><h4 class="all_specialists mark">Посмотреть все</h4></a>
+                        <a href="/reviews">
+                            <h4 class="all_specialists mark">Посмотреть все</h4>
+                        </a>
                     </div>
                     <div class="swiper-wrapper">
                         <div class="reviews_slides_feedback swiper-slide">
@@ -1168,17 +1183,16 @@
 
                 <!-- Schema.org разметка для отзывов -->
                 <script type="application/ld+json">
-                {
-                    "@context": "https://schema.org",
-                    "@type": "LocalBusiness",
-                    "name": "Линз-очки",
-                    "aggregateRating": {
-                        "@type": "AggregateRating",
-                        "ratingValue": "4.8",
-                        "reviewCount": 130
-                    },
-                    "review": [
-                        {
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "LocalBusiness",
+                        "name": "Линз-очки",
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.8",
+                            "reviewCount": 130
+                        },
+                        "review": [{
                             "@type": "Review",
                             "author": {
                                 "@type": "Person",
@@ -1190,9 +1204,8 @@
                                 "@type": "Rating",
                                 "ratingValue": "5"
                             }
-                        }
-                    ]
-                }
+                        }]
+                    }
                 </script>
 
                 <!-- ============================================
@@ -1339,7 +1352,7 @@
         <!-- ============================================
              МОДАЛЬНЫЕ ОКНА
         ============================================= -->
-        
+
         <!-- Форма обратной связи -->
         <div class="popContainer popupContactForm">
             <div class="closeIcon">
@@ -1353,6 +1366,7 @@
             </div>
             <script>
                 const iframe = document.getElementById('contact_form_iframe');
+
                 function adjustIframeHeight() {
                     try {
                         const doc = iframe.contentDocument || iframe.contentWindow.document;
@@ -1683,7 +1697,7 @@
     <!-- ============================================
          СКРИПТЫ И БИБЛИОТЕКИ
     ============================================ -->
-    
+
     <!-- jQuery плагины -->
     <script src="/g/libs/jquery-zoom/1.7.21/js/jquery.zoom.min.js"></script>
     <script src="/g/templates/shop2/2.130.2/130-22/js/quick_view_popup.js"></script>
@@ -1693,7 +1707,7 @@
     <script src="/g/libs/jquery-popover/0.0.5/jquery.popover.js"></script>
     <script src="/g/libs/jquery-cookie/1.4.0/jquery.cookie.js"></script>
     <script src="/g/templates/shop2/2.130.2/default-2/js/shop_favorite.js"></script>
-    
+
     <!-- Основные скрипты магазина -->
     <script src="/g/templates/shop2/2.130.2/130-22/js/plugins.js" charset="utf-8"></script>
     <script src="/g/templates/shop2/2.130.2/130-22/js/shop_main.min.js" charset="utf-8"></script>
@@ -1701,13 +1715,13 @@
     <script src="/g/templates/shop2/2.130.2/default-2/js/m.smart_search.js"></script>
     <script src="/g/templates/shop2/2.130.2/default-2/js/top_timer.js"></script>
     <script src="/g/templates/shop2/2.130.2/default-2/js/special_timer_popup.js"></script>
-    
+
     <!-- Swiper слайдер -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
+
     <!-- Яндекс.Карты -->
     <script src="https://api-maps.yandex.ru/2.1/?apikey=119abfea-01aa-4af5-9ca1-892d4dc21b76&lang=ru_RU"></script>
-    
+
     <!-- Кастомные скрипты -->
     <script src="/t/v10966/images/js/formatted_phone.js?v=1.0.1"></script>
     <script src="/t/v10966/images/js/map.js"></script>
@@ -1717,40 +1731,62 @@
     <script src="/t/v10966/images/js/reveal.js"></script>
     <script src="/t/v10966/images/js/recent_swiper.js"></script>
     <script src="/t/v10966/images/js/custom_script.js?v=1.0.1"></script>
-    
+
     <!-- Системные скрипты -->
     <script src="/my/s3/js/site.min.js?1781075224"></script>
     <script src="/g/basestyle/1.0.1/user/user.js" async="1"></script>
     <script src="/g/s3/goal/1.0.0/s3.goal.js"></script>
-    
+
     <!-- Инициализация скриптов -->
     <script>
         let is_user = false;
         window._s3Lang.ADD_TO_FAVORITE = 'Добавить в избранное';
         window._s3Lang.FORUM_FAVORITES = 'Избранное';
     </script>
-    
+
     <script>
         var gr_compare_kind_id = {};
     </script>
-    
+
     <script>
-        new s3.Goal({map:[], goals: [], ecommerce:[]});
+        new s3.Goal({
+            map: [],
+            goals: [],
+            ecommerce: []
+        });
     </script>
-    
+
     <script>
-        var megacounter_key="ec4e3e56e7d092d1c714205a540ad907";
-        (function(d){
+        var megacounter_key = "ec4e3e56e7d092d1c714205a540ad907";
+        (function(d) {
             var s = d.createElement("script");
-            s.src = "//counter.megagroup.ru/loader.js?"+new Date().getTime();
+            s.src = "//counter.megagroup.ru/loader.js?" + new Date().getTime();
             s.async = true;
             d.getElementsByTagName("head")[0].appendChild(s);
         })(document);
     </script>
-    
+
     <script>
-        $ite.start({"sid":4717249,"vid":4761444,"aid":4275795,"stid":4,"cp":21,"active":true,"domain":"linz-ochki.ru","lang":"ru","trusted":false,"debug":false,"captcha":4,"onetap":[{"provider":"vkontakte","provider_id":"51967585","code_verifier":"BICmf1Qrwh3G5zesjnPu5vocyDOReBBZFSg_Yvhw2HCMNizSk12nn0FszI0sXxV7"}]});
+        $ite.start({
+            "sid": 4717249,
+            "vid": 4761444,
+            "aid": 4275795,
+            "stid": 4,
+            "cp": 21,
+            "active": true,
+            "domain": "linz-ochki.ru",
+            "lang": "ru",
+            "trusted": false,
+            "debug": false,
+            "captcha": 4,
+            "onetap": [{
+                "provider": "vkontakte",
+                "provider_id": "51967585",
+                "code_verifier": "BICmf1Qrwh3G5zesjnPu5vocyDOReBBZFSg_Yvhw2HCMNizSk12nn0FszI0sXxV7"
+            }]
+        });
     </script>
 
 </body>
+
 </html>

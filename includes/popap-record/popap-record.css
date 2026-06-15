@@ -1,0 +1,292 @@
+
+.remodal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2000;
+    overflow-y: auto; /* Прокрутка оверлея */
+    padding: 40px 20px; /* Отступы сверху и снизу */
+}
+
+.remodal-overlay.active {
+    display: block;
+}
+
+/* Модальное окно - во всю высоту доступного пространства */
+.remodal {
+    background: white;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto; /* Центрирование */
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    /* Убираем max-height и overflow-y */
+}
+
+/* Кнопка закрытия */
+.remodal-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 10;
+    color: #999;
+    transition: color 0.3s;
+}
+
+.remodal-close-btn:hover {
+    color: #333;
+}
+
+.remodal-close-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Контент формы */
+.header-callback__container {
+    padding: 30px;
+}
+
+.tpl-anketa {
+    display: flex;
+    flex-direction: column;
+}
+
+.tpl-anketa__left {
+    margin-bottom: 25px;
+}
+
+.tpl-anketa__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Поля формы */
+.tpl-anketa input[type="text"],
+.tpl-anketa input[type="tel"],
+.tpl-anketa input[type="email"],
+.tpl-anketa select,
+.tpl-anketa textarea {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.tpl-anketa .field-value {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tpl-anketa .tpl-field {
+    width: 100%;
+    box-sizing: border-box;
+}
+.tpl-field {
+    margin-bottom: 20px;
+}
+
+.field-title {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.field-required-mark {
+    color: #e74c3c;
+}
+
+.field-value input,
+.field-value select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #dddddda7;
+    font-size: 14px;
+    transition: border-color 0.3s;
+    font-family: inherit;
+}
+
+.field-value input:hover , .field-value select:hover {
+    border: 2px solid #9adbf9;
+}
+
+.field-value input:focus,
+.field-value select:focus {
+    outline: none;
+    border-color: #9adbf9;
+}
+
+.field-value input::placeholder {
+    color: #999;
+}
+
+.gr-select-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.gr-select-wrapper select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    padding-right: 40px;
+}
+
+/* Чекбоксы */
+.type-checkbox .field-value ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.type-checkbox label {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.type-checkbox input[type="checkbox"] {
+    margin-right: 10px;
+    margin-top: 2px;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+/* Базовые стили чекбокса */
+.filter-checkbox-label input[type="checkbox"] {
+    /* Убираем стандартный вид */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    /* Размеры */
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    
+    /* Белый фон с рамкой */
+    background: #fff;
+    border: 2px solid #d0d0d0;
+    border-radius: 4px;
+    
+    /* Курсор и переход */
+    cursor: pointer;
+    transition: all 0.2s ease;
+    
+    /* Позиционирование для галочки */
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* При наведении */
+.filter-checkbox-label input[type="checkbox"]:hover {
+    border-color: #3FACE2;
+}
+
+/* При нажатии (отметке) — голубой фон с галочкой */
+.filter-checkbox-label input[type="checkbox"]:checked {
+    background: #3FACE2;
+    border-color: #3FACE2;
+}
+
+/* Галочка внутри чекбокса */
+.filter-checkbox-label input[type="checkbox"]:checked::after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 9px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-top: -6px;
+    margin-left: -3px;
+}
+
+/* Стили для фокуса (доступность) */
+.filter-checkbox-label input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(63, 172, 226, 0.2);
+}
+
+/* Стили для лейбла */
+.filter-checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #2E2F38;
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+}
+
+.filter-checkbox-label:hover {
+    color: #3FACE2;
+}
+
+.type-checkbox a {
+    color: #3b75b6;
+    text-decoration: none;
+}
+
+.type-checkbox a:hover {
+    text-decoration: underline;
+}
+
+/* Кнопка отправки */
+.tpl-field-button {
+    margin-top: 25px;
+}
+
+.tpl-form-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #87CEEB;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tpl-form-button:hover {
+    background-color: #76B9D9;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    .remodal-overlay {
+        padding: 20px 10px; /* Меньше отступы на мобильных */
+    }
+
+    .header-callback__container {
+        padding: 20px;
+    }
+
+    .tpl-anketa__title {
+        font-size: 20px;
+    }
+}

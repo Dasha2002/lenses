@@ -24,11 +24,20 @@
 <body>
 
     <?php include __DIR__ . '/includes/header/header.php'; ?>
-    
-    <?php include __DIR__ . '/includes/footer/footer.php'; ?>
 
+    <?php include __DIR__ . '/includes/main/main.php'; ?>
+    <?php include __DIR__ . '/includes/category/category.php'; ?>
+    <?php include __DIR__ . '/includes/news/news.php'; ?>
+    <?php include __DIR__ . '/includes/about/about.php'; ?>
+    <?php include __DIR__ . '/includes/thanks/thanks.php'; ?>
+    <?php include __DIR__ . '/includes/how-work/how-work.php'; ?>
+    <?php include __DIR__ . '/includes/social-stories/social-stories.php'; ?>
+    <?php include __DIR__ . '/includes/reviews/reviews.php'; ?>
+    <?php include __DIR__ . '/includes/mailing/mailing.php'; ?>
+
+    <?php include __DIR__ . '/includes/footer/footer.php'; ?>
     <!-- Ваши скрипты -->
-    <script src="/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>

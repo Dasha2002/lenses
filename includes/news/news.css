@@ -1,0 +1,136 @@
+.news_hidden {
+  max-height: 370px;
+  overflow: hidden;
+}
+
+.news {
+  position: relative;
+  margin: 0 0 30px 0;
+  padding: 30px 50px 40px;
+  
+  .news_bac {
+    display: none;
+    position: absolute;
+    background: linear-gradient(#73737300 70%, #ffffff);
+    width: 100%;
+    top: 40px;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  &.news_hidden .news_bac {
+    display: block;
+  }
+
+  .news_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    .news_header_title {
+      font-size: 32px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+    }
+  }
+
+  .news_contant {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .news_contant_block {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      width: calc(50% - 10px);
+      background-color: #eef5f9;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      text-decoration: none;
+
+      .news_image {
+        position: relative;
+        border-radius: 20px 0px 0px 20px;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          translate: -50% -50%;
+          object-fit: cover;
+          width: 100%;
+        }
+      }
+
+      .news_contant_block_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+
+        .news_contant_title {
+          margin: 0 0 10px 0;
+          font-weight: 500;
+          color: #3face2;
+        }
+
+        .news_contant_text {
+          font-weight: 400;
+          margin: 0;
+          color: black;
+          text-decoration: none;
+        }
+      }
+      @media (max-width: 800px) {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
+
+  .news_open {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    text-decoration: underline;
+    color: #3face2;
+    font-weight: 500;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 2;
+    width: 100%;
+
+    img {
+      margin-left: 10px;
+      transition: rotate 0.2s ease;
+    }
+
+    &.open img {
+      rotate: 180deg;
+    }
+  }
+
+  &:not(.news_hidden) .news_open {
+    position: static;
+    margin-top: 10px;
+    align-items: center;
+  }
+
+  @media (max-width: 650px) {
+    padding: 0 20px;
+  }
+}

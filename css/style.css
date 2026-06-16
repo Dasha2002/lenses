@@ -1,5 +1,14 @@
 @import '/includes/header/header.css';
-
+@import '/includes/footer/footer.css';
+@import '/includes/mailing/mailing.css';
+@import '/includes/reviews/reviews.css';
+@import '/includes/social-stories/social-stories.css';
+@import '/includes/how-work/how-work.css';
+@import '/includes/thanks/thanks.css';
+@import '/includes/about/about.css';
+@import '/includes/news/news.css';
+@import '/includes/category/category.css';
+@import '/includes/main/main.css';
 
 html {
     scroll-behavior: smooth;
@@ -11,6 +20,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin: 0;
 }
 
 .application-notice {

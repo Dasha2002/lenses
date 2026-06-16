@@ -25,11 +25,13 @@ $pageDescription = 'Сеть салонов оптики';
 
 <body>
 
-<?php include __DIR__ . '/includes/popap-record/popap-record.php'; ?>
+    <?php include __DIR__ . '/includes/popap-record/popap-record.php'; ?>
+    <?php include __DIR__ . '/includes/popup-overlay/popup-overlay.php'; ?>
+    <?php include __DIR__ . '/includes/popap-filter/popap-filter.php'; ?>
     <?php include __DIR__ . '/includes/header/header.php'; ?>
     <?php include __DIR__ . '/includes/inf-text/inf-text.php'; ?>
     <?php include __DIR__ . '/includes/service_main/service_main.php'; ?>
-
+    <?php include __DIR__ . '/includes/carousel-brands/carousel-brands.php'; ?>
 
     <?php include __DIR__ . '/includes/footer/footer.php'; ?>
 

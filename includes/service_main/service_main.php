@@ -108,102 +108,50 @@
         </div>
     </div>
 
-    <!-- Categories Section -->
-    <div class="categories-section">
-        <a href="#" class="category-item">
-            <div class="category-info">
-                <span class="category-count">23</span>
-                <span class="category-name">Новинки</span>
-            </div>
-            <span class="arrow">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M7.293 15.293L12.586 10L7.293 4.707" stroke="#2cace3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </span>
-        </a>
+    <div class="welcome">
 
-        <a href="#" class="category-item">
-            <div class="category-info">
-                <span class="category-count">80</span>
-                <span class="category-name">Мягкие контактные линзы</span>
-            </div>
-            <span class="arrow">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M7.293 15.293L12.586 10L7.293 4.707" stroke="#2cace3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </span>
-        </a>
 
-        <a href="#" class="category-item">
-            <div class="category-info">
-                <span class="category-count">41</span>
-                <span class="category-name">Аксессуары для контактных линз</span>
-            </div>
-            <span class="arrow">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M7.293 15.293L12.586 10L7.293 4.707" stroke="#2cace3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </span>
-        </a>
-
-        <a href="#" class="category-item">
-            <div class="category-info">
-                <span class="category-count">99</span>
-                <span class="category-name">Солнцезащитные очки</span>
-            </div>
-            <span class="arrow">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M7.293 15.293L12.586 10L7.293 4.707" stroke="#2cace3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </span>
-        </a>
-
-        <a href="#" class="category-item">
-            <div class="category-info">
-                <span class="category-count">192</span>
-                <span class="category-name">Оправы</span>
-            </div>
-            <span class="arrow">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M7.293 15.293L12.586 10L7.293 4.707" stroke="#2cace3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </span>
-        </a>
-
-        <a href="#" class="category-item">
-            <div class="category-info">
-                <span class="category-count">17</span>
-                <span class="category-name">Очки для детей и подростков</span>
-            </div>
-            <span class="arrow">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M7.293 15.293L12.586 10L7.293 4.707" stroke="#2cace3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </span>
-        </a>
-
-        <a href="#" class="category-item">
-            <div class="category-info">
-                <span class="category-count">8</span>
-                <span class="category-name">Аксессуары для очков</span>
-            </div>
-            <span class="arrow">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M7.293 15.293L12.586 10L7.293 4.707" stroke="#2cace3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </span>
-        </a>
-
-        <a href="#" class="category-item">
-            <div class="category-info">
-                <span class="category-count">3</span>
-                <span class="category-name">Товары для слабовидящих</span>
-            </div>
-            <span class="arrow">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M7.293 15.293L12.586 10L7.293 4.707" stroke="#2cace3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </span>
-        </a>
+        <div class="welcome_link">
+            <a href="/magazin/folder/novinki">
+                <h4>23</h4>
+                <p>Новинки</p>
+                <div class="img-welcome"><img src="/assets/arrow.svg" alt=""></div>
+            </a>
+            <a href="/magazin/folder/myagkie-kontaktnye-linzy">
+                <h4>80</h4>
+                <p>Мягкие контактные линзы</p>
+                <div class="img-welcome"><img src="/assets/arrow.svg" alt=""></div>
+            </a>
+            <a href="/magazin/folder/aksessuary-dlya-kontaktnyh-linz">
+                <h4>41</h4>
+                <p>Аксессуары для контактных линз</p>
+                <div class="img-welcome"><img src="/assets/arrow.svg" alt=""></div>
+            </a>
+            <a href="/magazin/folder/solncezashchitnye-ochki">
+                <h4>99</h4>
+                <p>Солнцезащитные очки</p>
+                <div class="img-welcome"><img src="/assets/arrow.svg" alt=""></div>
+            </a>
+            <a href="/magazin/folder/opravy">
+                <h4>192</h4>
+                <p>Оправы</p>
+                <div class="img-welcome"><img src="/assets/arrow.svg" alt=""></div>
+            </a>
+            <a href="/magazin/folder/ochki-dlya-detej-i-podrostkov">
+                <h4>17</h4>
+                <p>Очки для детей и подростков</p>
+                <div class="img-welcome"><img src="/assets/arrow.svg" alt=""></div>
+            </a>
+            <a href="/magazin/folder/aksessuary-dlya-ochkov">
+                <h4>8</h4>
+                <p>Аксессуары для очков</p>
+                <div class="img-welcome"><img src="/assets/arrow.svg" alt=""></div>
+            </a>
+            <a href="/magazin/folder/tovary-dlya-slabovidyashchih">
+                <h4>3</h4>
+                <p>Товары для слабовидящих</p>
+                <div class="img-welcome"><img src="/assets/arrow.svg" alt=""></div>
+            </a>
+        </div>
     </div>
 </div>

@@ -1,23 +1,19 @@
 // popap-record
-// Открытие модального окна
 document.querySelectorAll('.popap-record-btn').forEach(function(btn) {
     btn.addEventListener('click', function(e) {
         e.preventDefault();
         const modal = document.getElementById('callbackModal');
         modal.classList.add('active');
-        // НЕ блокируем прокрутку body - страница должна прокручиваться
-        document.body.style.overflow = 'hidden'; // УДАЛИТЬ ЭТУ СТРОКУ
+        
+        document.body.style.overflow = 'hidden'; 
     });
 });
 
-// Закрытие модального окна
 function closeModal() {
     document.getElementById('callbackModal').classList.remove('active');
-    // НЕ разблокируем прокрутку, так как мы её не блокировали
-    // document.body.style.overflow = ''; // УДАЛИТЬ ЭТУ СТРОКУ
+    
 }
 
-// Закрытие при клике на оверлей
 document.getElementById('callbackModal').addEventListener('click', function(e) {
     if (e.target === this) {
         closeModal();
@@ -40,235 +36,152 @@ document.querySelectorAll('.datepickerInit').forEach(function(input) {
 
 
 
+
+// popap-overlay
 document.addEventListener('DOMContentLoaded', function() {
-    const header = document.querySelector('.header');
-    const headerScrolled = document.getElementById('headerScrolled');
-    const body = document.body;
-
-    let scrollThreshold = 150;
+    const authPopup = document.getElementById('authPopup');
+    const authPopupClose = document.getElementById('authPopupClose');
+    const authOpenBtns = document.querySelectorAll('.btn-popap-overlay');
     
-    function handleScroll() {
-        const scrollY = window.pageYOffset || document.documentElement.scrollTop;
-        
-        if (scrollY > scrollThreshold) {
-            headerScrolled.classList.add('active');
-        } else {
-            headerScrolled.classList.remove('active');
-        }
-    }
-    
-    window.addEventListener('scroll', function() {
-        requestAnimationFrame(handleScroll);
-    });
-
-    // ========== ОТКРЫТИЕ/ЗАКРЫТИЕ ПОПАПА ФИЛЬТРОВ (НОВЫЙ ВАРТИАНТ) ==========
-const filtersOverlayFull = document.getElementById('filtersOverlayFull');
-const filtersCloseFull = document.getElementById('filtersCloseFull');
-const filterBtn = document.querySelector('.header-search__filter');
-
-// Открытие по клику на иконку фильтра
-if (filterBtn) {
-    filterBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        openFiltersFull();
-    });
-}
-
-// Закрытие по крестику
-if (filtersCloseFull) {
-    filtersCloseFull.addEventListener('click', closeFiltersFull);
-}
-
-// Закрытие по клику на overlay
-if (filtersOverlayFull) {
-    filtersOverlayFull.addEventListener('click', function(e) {
-        if (e.target === this) {
-            closeFiltersFull();
-        }
-    });
-}
-
-// Закрытие по Escape
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && filtersOverlayFull && filtersOverlayFull.classList.contains('active')) {
-        closeFiltersFull();
-    }
-});
-
-function openFiltersFull() {
-    if (filtersOverlayFull) {
-        filtersOverlayFull.classList.add('active');
-        document.body.style.overflow = 'hidden';
-    }
-}
-
-function closeFiltersFull() {
-    if (filtersOverlayFull) {
-        filtersOverlayFull.classList.remove('active');
-        document.body.style.overflow = '';
-    }
-}
-
-// ========== КНОПКА "ПОКАЗАТЬ ЕЩЁ" (ПРОИЗВОДИТЕЛИ) ==========
-const filterToggleVendors = document.getElementById('filterToggleVendors');
-if (filterToggleVendors) {
-    filterToggleVendors.addEventListener('click', function() {
-        const hiddenVendors = document.querySelectorAll('.filter-vendor-hidden');
-        const isExpanded = this.classList.contains('expanded');
-        
-        if (isExpanded) {
-            // Сворачиваем
-            hiddenVendors.forEach(function(vendor) {
-                vendor.classList.remove('show');
-            });
-            this.innerHTML = 'Показать ещё <span class="vendors-count">5</span>';
-            this.classList.remove('expanded');
-        } else {
-            // Разворачиваем
-            hiddenVendors.forEach(function(vendor) {
-                vendor.classList.add('show');
-            });
-            this.innerHTML = 'Свернуть';
-            this.classList.add('expanded');
-        }
-    });
-}
-
-// ========== ОБРАБОТКА ОТПРАВКИ ФОРМЫ ==========
-const filtersFormFull = document.getElementById('filtersFormFull');
-if (filtersFormFull) {
-    filtersFormFull.addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        // Собираем данные формы
-        const formData = new FormData(this);
-        const data = {};
-        for (let [key, value] of formData.entries()) {
-            if (data[key]) {
-                if (!Array.isArray(data[key])) {
-                    data[key] = [data[key]];
-                }
-                data[key].push(value);
-            } else {
-                data[key] = value;
-            }
-        }
-
-        console.log('Данные фильтра:', data);
-        closeFiltersFull();
-    });
-    }
-
-    
-
-    // ========== ОБЩИЕ ФУНКЦИИ ОТКРЫТИЯ/ЗАКРЫТИЯ ПОПАПОВ ==========
-    const userIcons = document.querySelectorAll('.header-icon[href="#"], [data-open="loginPopup"]');
-    userIcons.forEach(icon => {
-        icon.addEventListener('click', function(e) {
-            e.preventDefault();
-            openPopup('loginPopup');
-        });
-    });
-
-    const callbackBtn = document.querySelector('.header-btn');
-    if (callbackBtn) {
-        callbackBtn.addEventListener('click', function() {
-            openPopup('callbackPopup');
-        });
-    }
-
-    document.querySelectorAll('[data-open]').forEach(btn => {
+    authOpenBtns.forEach(function(btn) {
         btn.addEventListener('click', function(e) {
             e.preventDefault();
-            const popupId = this.getAttribute('data-open');
-            openPopup(popupId);
+            authPopup.classList.add('active');
+            document.body.style.overflow = 'hidden';
         });
     });
-
-    document.querySelectorAll('[data-close]').forEach(btn => {
-        btn.addEventListener('click', function() {
-            const popupId = this.getAttribute('data-close');
-            closePopup(popupId);
+    
+    if (authPopupClose) {
+        authPopupClose.addEventListener('click', function() {
+            authPopup.classList.remove('active');
+            document.body.style.overflow = '';
         });
-    });
-
-    document.querySelectorAll('.popup-overlay').forEach(overlay => {
-        overlay.addEventListener('click', function(e) {
+    }
+    
+    if (authPopup) {
+        authPopup.addEventListener('click', function(e) {
             if (e.target === this) {
-                closePopup(this.id);
+                this.classList.remove('active');
+                document.body.style.overflow = '';
             }
         });
-    });
+    }
 
     document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') {
-            document.querySelectorAll('.popup-overlay.active').forEach(popup => {
-                closePopup(popup.id);
-            });
-            // Также закрываем фильтры при нажатии Escape
-            if (filtersOverlay && filtersOverlay.classList.contains('active')) {
-                closeFilters();
-            }
+        if (e.key === 'Escape' && authPopup && authPopup.classList.contains('active')) {
+            authPopup.classList.remove('active');
+            document.body.style.overflow = '';
         }
     });
 
-    function openPopup(id) {
-        const popup = document.getElementById(id);
-        if (popup) {
-            popup.classList.add('active');
-            body.classList.add('popup-open');
-        }
-    }
-
-    function closePopup(id) {
-        const popup = document.getElementById(id);
-        if (popup) {
-            popup.classList.remove('active');
-            if (!document.querySelector('.popup-overlay.active')) {
-                body.classList.remove('popup-open');
-            }
-        }
-    }
-
-    document.querySelectorAll('.popup-filters__form, .popup-login__form, .popup-callback__form').forEach(form => {
-        form.addEventListener('submit', function(e) {
+    const authForm = document.getElementById('authForm');
+    if (authForm) {
+        authForm.addEventListener('submit', function(e) {
             e.preventDefault();
-
-            alert('Форма отправлена!');
-            closePopup(this.closest('.popup-overlay').id);
-        });
-    });
-
-    const phoneInput = document.querySelector('input[name="phone"]');
-    if (phoneInput) {
-        phoneInput.addEventListener('input', function(e) {
-            let value = e.target.value.replace(/\D/g, '');
-            if (value.startsWith('8')) value = '7' + value.slice(1);
-            if (!value.startsWith('7')) value = '7' + value;
             
-            let formatted = '+7';
-            if (value.length > 1) formatted += ' (' + value.slice(1, 4);
-            if (value.length >= 5) formatted += ') ' + value.slice(4, 7);
-            if (value.length >= 8) formatted += '-' + value.slice(7, 9);
-            if (value.length >= 10) formatted += '-' + value.slice(9, 11);
+            const login = this.querySelector('input[type="text"]').value;
+            const password = this.querySelector('input[type="password"]').value;
             
-            e.target.value = formatted;
+            console.log('Попытка входа:', { login, password });
+            
+            authPopup.classList.remove('active');
+            document.body.style.overflow = '';
         });
     }
+});
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            if (href === '#' || href.length < 2) return;
-            
-            const target = document.querySelector(href);
-            if (target) {
-                e.preventDefault();
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
+
+
+
+// popap-filter
+document.addEventListener('DOMContentLoaded', function() {
+    const filterPopup = document.getElementById('filterPopup');
+    const filterPopupClose = document.getElementById('filterPopupClose');
+    const filterOpenBtns = document.querySelectorAll('.btn-popap-filter');
+    
+    // Открытие по клику на кнопку
+    filterOpenBtns.forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            filterPopup.classList.add('active');
+            document.body.style.overflow = 'hidden';
         });
     });
+    if (filterPopupClose) {
+        filterPopupClose.addEventListener('click', function() {
+            filterPopup.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    }
+    if (filterPopup) {
+        filterPopup.addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+    
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && filterPopup && filterPopup.classList.contains('active')) {
+            filterPopup.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+    
+    const filterToggleVendors = document.getElementById('filterToggleVendors');
+    
+    if (filterToggleVendors) {
+        filterToggleVendors.addEventListener('click', function() {
+            const hiddenVendors = document.querySelectorAll('.filter-vendor-hidden');
+            const isExpanded = this.classList.contains('expanded');
+            
+            if (isExpanded) {
+                // Скрываем
+                hiddenVendors.forEach(function(vendor) {
+                    vendor.classList.remove('show');
+                });
+                this.textContent = 'Показать ещё 5';
+                this.classList.remove('expanded');
+            } else {
+                // Показываем
+                hiddenVendors.forEach(function(vendor) {
+                    vendor.classList.add('show');
+                });
+                this.textContent = 'Скрыть';
+                this.classList.add('expanded');
+            }
+        });
+    }
+    const filterForm = document.getElementById('filterForm');
+    
+    if (filterForm) {
+        filterForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = {};
+            
+            for (let [key, value] of formData.entries()) {
+                if (key.endsWith('[]')) {
+                    const baseKey = key.slice(0, -2);
+                    if (!data[baseKey]) data[baseKey] = [];
+                    data[baseKey].push(value);
+                } else {
+                    data[key] = value;
+                }
+            }
+            
+            console.log('Данные фильтра:', data);
+            filterPopup.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    }
 });
+
+
+
+
 
 
 // Секция service_main
@@ -291,5 +204,46 @@ document.addEventListener('DOMContentLoaded', function() {
         slidesPerView: 1,
         spaceBetween: 0, // Убрали отступы
         centeredSlides: false,
+    });
+});
+
+
+// Секция carousel-brands
+document.addEventListener('DOMContentLoaded', function() {
+    const brandsSwiper = new Swiper('.brands-swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 0, 
+        
+
+        autoplay: false,
+    
+        allowTouchMove: true,
+        grabCursor: true,
+        
+
+        navigation: false,
+        pagination: false,
+        
+
+        loop: false,
+    
+        freeMode: true,
+        freeModeMomentum: true,
+        freeModeMomentumVelocityRatio: 0.3,
+
+        breakpoints: {
+            320: {
+                slidesPerView: 'auto',
+                spaceBetween: 0,
+            },
+            768: {
+                slidesPerView: 'auto',
+                spaceBetween: 0,
+            },
+            1024: {
+                slidesPerView: 'auto',
+                spaceBetween: 0,
+            },
+        },
     });
 });

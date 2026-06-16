@@ -874,73 +874,9 @@
     color: white;
 }
 
-/* ========== АДАПТИВНОСТЬ ПОПАПОВ ========== */
-@media (max-width: 768px) {
-    .popup-container {
-        padding: 30px 20px;
-    }
-    
-    .popup-filters__header,
-    .popup-login__header,
-    .popup-callback__header {
-        font-size: 20px;
-    }
-    
-    .filter-checkboxes {
-        grid-template-columns: 1fr;
-    }
-    
-    .header-scrolled__nav {
-        display: none;
-    }
-    
-    .header-scrolled {
-        padding: 10px 15px;
-    }
-}
 
-@media (max-width: 480px) {
-    .popup-overlay {
-        padding: 20px 10px;
-    }
-    
-    .popup-container {
-        padding: 25px 15px;
-    }
-    
-    .login-buttons {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
 
-/* Блокировка скролла body при открытом попапе */
-body.popup-open {
-    overflow: hidden;
-}
 
-/* Адаптивность для мобильных */
-@media (max-width: 768px) {
-    .sub-menu {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-        box-shadow: none;
-        min-width: 100%;
-        padding: 10px 0 10px 20px;
-        display: none;
-        margin-top: 0;
-    }
-    
-    .menu-item-has-children.active .sub-menu {
-        display: block;
-    }
-    
-    .menu-item-has-children > a::after {
-        border-top-color: #666;
-    }
-}
 
 /* Бренды */
 .header-brands {
@@ -1044,92 +980,336 @@ body.popup-open {
     border-radius: 6px;
 }
 
-/* Адаптивность */
-@media (max-width: 1200px) {
-    .header-top__nav {
-        gap: 15px;
+/* ============================================
+   ПЛАНШЕТНАЯ ВЕРСИЯ (промежуточная)
+   ============================================ */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .header-categories {
+        display: none;
     }
-    
-    .header-top__nav a {
-        font-size: 12px;
-    }
-    
-    .header-main {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-    
-    .header-search {
-        order: 3;
-        max-width: 100%;
-        width: 100%;
-    }
-    
-    .header-menu {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-}
-
-@media (max-width: 768px) {
+    /* Скрываем верхнюю полосу */
     .header-top {
-        flex-direction: column;
+        display: none;
+    }
+    
+    /* Основная шапка */
+    .header-main {
+        padding: 15px 20px;
+        gap: 20px;
+        flex-wrap: nowrap;
+    }
+    
+    /* Логотип */
+    .header-logo {
+        flex-shrink: 0;
         gap: 10px;
     }
     
-    .header-top__nav {
-        flex-wrap: wrap;
-        justify-content: center;
+    .header-logo img {
+        height: 50px;
     }
     
-    .header-top__right {
-        flex-wrap: wrap;
-        justify-content: center;
+    .header-logo__text {
+        display: none; /* Скрываем текст под логотипом */
     }
     
-    .header-main {
-        flex-direction: column;
+    /* Кнопка записи */
+    .header-btn {
+        padding: 10px 18px;
+        font-size: 13px;
+        flex-shrink: 0;
     }
     
-    .header-logo {
-        flex-direction: column;
-        text-align: center;
+    /* Поисковая строка */
+    .header-search {
+        flex: 1;
+        max-width: none;
+        padding: 8px 10px;
     }
     
-    .header-logo__text p {
-        max-width: 100%;
+    .header-search input {
+        font-size: 13px;
     }
     
-    .header-categories {
-        overflow-x: auto;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
+    .header-search__filter img,
+    .header-search__submit img {
+        width: 18px;
+        height: 18px;
     }
     
-    .header-menu {
-        gap: 15px;
-    }
-    
-    .header-fixed__categories {
-        display: none;
-    }
-}
-
-@media (max-width: 480px) {
-    .header-city span {
-        display: none;
-    }
-    
-    .header-telegram span {
-        display: none;
-    }
-    
+    /* Иконки */
     .header-icons {
         gap: 10px;
+        flex-shrink: 0;
+    }
+    
+    .header-icon {
+        width: 34px;
+        height: 34px;
+        margin-right: 0;
     }
     
     .header-icon img {
         width: 20px;
         height: 20px;
+    }
+    
+    .cart-count {
+        width: 18px;
+        height: 18px;
+        font-size: 11px;
+    }
+    
+    /* Категории */
+    .header-categories {
+        margin: 0 20px;
+        padding: 0;
+    }
+    
+    .catalog-btn {
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+    
+    .header-menu {
+        gap: 15px;
+    }
+    
+    .header-menu a {
+        font-size: 13px;
+        padding: 12px 10px;
+    }
+    
+    /* Бренды скрываем на планшете */
+    .header-brands {
+        display: none;
+    }
+    
+    /* Фиксированная шапка */
+    .header-scrolled {
+        margin: 5px 10px 10px;
+        padding: 10px 20px;
+    }
+    
+    .header-scrolled__nav {
+        display: none; /* Скрываем ссылки на планшете */
+    }
+    
+    .catalog-btn--sm {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+    
+    .scrolled-icon {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+/* Маленькие планшеты */
+@media (min-width: 769px) and (max-width: 992px) {
+    .header-menu {
+        display: none; /* Скрываем меню на маленьких планшетах */
+    }
+    
+    .header-categories {
+        display: none; /* Или показываем только кнопку Каталог */
+    }
+    
+    .header-main {
+        gap: 15px;
+    }
+    
+    .header-btn {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+    
+    .header-icon {
+        width: 32px;
+        height: 32px;
+    }
+}
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .header-categories {
+        display: none;
+    }
+    .header-top {
+        display: none;
+    }
+    
+    /* Основная часть шапки на мобильных */
+    .header-main {
+        padding: 15px 10px;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    
+    /* Логотип */
+    .header-logo {
+        order: 1;
+        gap: 10px;
+    }
+    
+    .header-logo img {
+        height: 40px;
+    }
+    
+    .header-logo__text {
+        display: none; /* Скрываем текст логотипа на мобильных */
+    }
+    
+    /* Иконки справа от логотипа */
+    .header-icons {
+        order: 2;
+        margin-left: auto;
+        gap: 8px;
+    }
+    
+    .header-icon {
+        width: 32px;
+        height: 32px;
+        margin-right: 0;
+    }
+    
+    .header-icon img {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .cart-count {
+        width: 16px;
+        height: 16px;
+        font-size: 10px;
+    }
+    
+    /* Кнопка записи скрываем на мобильных в шапке */
+    .header-btn {
+        display: none;
+    }
+    
+    /* Поисковая строка на всю ширину */
+    .header-search {
+        order: 3;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    
+    .header-search input {
+        font-size: 14px;
+    }
+    
+    .header-search__filter img,
+    .header-search__submit img {
+        width: 18px;
+        height: 18px;
+    }
+    
+    /* Категории */
+    
+    
+    .catalog-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    
+    .header-menu {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .header-menu.active {
+        display: flex;
+    }
+    
+    .header-menu a {
+        padding: 12px 15px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    
+    .menu-item-has-children > ul {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        min-width: 100%;
+        padding: 10px 0 10px 20px;
+        display: none;
+        margin-top: 0;
+    }
+    
+    .menu-item-has-children.active > ul {
+        display: block;
+    }
+    
+    /* Бренды */
+    .header-brands {
+        display: none;
+    }
+
+    
+    /* Фиксированная шапка при скролле */
+    .header-scrolled {
+        margin: 5px;
+        padding: 10px 15px;
+    }
+    
+    .header-scrolled__inner {
+        gap: 15px;
+    }
+    
+    .header-scrolled__nav {
+        display: none;
+    }
+    
+    .catalog-btn--sm {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+    
+    .scrolled-icon {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* Очень маленькие экраны */
+@media (max-width: 480px) {
+    .header-main {
+        padding: 10px;
+    }
+    
+    .header-logo img {
+        height: 35px;
+    }
+    
+    .header-icon {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .header-icon img {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .header-search {
+        padding: 8px;
+        max-height: 25px;
+    }
+    
+    .header-search input {
+        font-size: 13px;
+    }
+    
+    .catalog-btn {
+        padding: 8px 16px;
+        font-size: 12px;
     }
 }

@@ -2,6 +2,9 @@
 @import '/includes/inf-text/inf-text.css';
 @import '/includes/service_main/service_main.css';
 @import '/includes/popap-record/popap-record.css';
+@import '/includes/popap-filter/popap-filter.css';
+@import '/includes/popup-overlay/popup-overlay.css';
+@import '/includes/carousel-brands/carousel-brands.css';
 
 
 html {

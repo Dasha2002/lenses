@@ -106,20 +106,20 @@
     background: #fff;
 }
 
-.swiper {
+.mySwiper {
     width: 100%;
     height: 100%;
 }
 
-.swiper-wrapper {
+.mySwiper .swiper-wrapper {
     width: 100%;
 }
 
-.swiper-slide {
-    width: 100% !important; 
-    opacity: 1 !important; 
-    filter: none !important; 
-    transition: none; 
+.mySwiper .swiper-slide {
+    width: 100% !important;
+    opacity: 1 !important;
+    filter: none !important;
+    transition: none;
 }
 
 .slide_2_image {

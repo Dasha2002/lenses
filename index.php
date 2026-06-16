@@ -28,6 +28,7 @@ $pageDescription = 'Сеть салонов оптики';
     <?php include __DIR__ . '/includes/popap-record/popap-record.php'; ?>
     <?php include __DIR__ . '/includes/popup-overlay/popup-overlay.php'; ?>
     <?php include __DIR__ . '/includes/popap-filter/popap-filter.php'; ?>
+    <?php include __DIR__ . '/includes/catalog/catalog.php'; ?>
     <?php include __DIR__ . '/includes/header/header.php'; ?>
     <?php include __DIR__ . '/includes/inf-text/inf-text.php'; ?>
     <?php include __DIR__ . '/includes/service_main/service_main.php'; ?>

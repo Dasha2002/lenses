@@ -181,6 +181,43 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+//popap-catalog
+document.addEventListener('DOMContentLoaded', function() {
+    const catalogPopup = document.getElementById('catalogPopup');
+    const catalogPopupClose = document.getElementById('catalogPopupClose');
+    const catalogBtns = document.querySelectorAll('.catalog-btn');
+    
+    catalogBtns.forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            catalogPopup.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+    if (catalogPopupClose) {
+        catalogPopupClose.addEventListener('click', function() {
+            catalogPopup.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    }
+    if (catalogPopup) {
+        catalogPopup.addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && catalogPopup && catalogPopup.classList.contains('active')) {
+            catalogPopup.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+});
+
+
+
 
 
 

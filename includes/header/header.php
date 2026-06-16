@@ -87,7 +87,7 @@
     <!-- Категории -->
     <div class="header-categories">
 
-        <button class="catalog-btn">
+        <button class="catalog-btn catalog">
             Каталог
         </button>
 

@@ -1,0 +1,64 @@
+
+.brands-carousel {
+    max-width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.brands-swiper {
+    width: 100%;
+}
+
+.brands-swiper .swiper-wrapper {
+    align-items: center;
+}
+
+.brands-swiper .swiper-slide {
+    width: auto !important; 
+    flex-shrink: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; 
+}
+
+.brands-swiper .swiper-slide a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px; 
+    transition: opacity 0.2s;
+}
+
+.brands-swiper .swiper-slide a:hover {
+    opacity: 0.7;
+}
+
+.brands-swiper .swiper-slide img {
+    width: auto;
+    max-width: 150px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.brands-swiper .swiper-slide img:hover {
+    filter: grayscale(0%);
+}
+
+@media (max-width: 768px) {
+    .brands-carousel {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .brands-swiper .swiper-slide img {
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .brands-swiper .swiper-slide img {
+        max-width: 100px;
+    }
+}

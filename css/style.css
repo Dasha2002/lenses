@@ -8,7 +8,14 @@
 @import '/includes/about/about.css';
 @import '/includes/news/news.css';
 @import '/includes/category/category.css';
-@import '/includes/main/main.css';
+@import '/includes/main/main.css';@import '/includes/inf-text/inf-text.css';
+@import '/includes/service_main/service_main.css';
+@import '/includes/popap-record/popap-record.css';
+@import '/includes/popap-filter/popap-filter.css';
+@import '/includes/popup-overlay/popup-overlay.css';
+@import '/includes/carousel-brands/carousel-brands.css';
+@import '/includes/catalog/catalog.css';
+
 
 html {
     scroll-behavior: smooth;
@@ -18,11 +25,19 @@ body {
     font-family: 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
-    margin: 0;
+
+    margin: 15px 0 0;
 }
 
+.popap-record-btn {
+    background-color: #3FACE2;
+    color: white;
+    border-radius: 10px;
+}
+.popap-record-btn:hover {
+    background-color: #4bc2fe;
+}
 .application-notice {
     position: fixed;
     right: 24px;

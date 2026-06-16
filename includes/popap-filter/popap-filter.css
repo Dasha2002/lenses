@@ -1,0 +1,343 @@
+
+/* ============================================
+   ОВЕРЛЕЙ ПОПАПА (на весь экран)
+   ============================================ */
+.filter-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 8990;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.filter-popup-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ============================================
+   КОНТЕЙНЕР ПОПАПА
+   ============================================ */
+.filter-popup {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px 40px;
+    position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* ============================================
+   КРЕСТИК ЗАКРЫТИЯ
+   ============================================ */
+.filter-popup-close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s;
+    z-index: 10;
+}
+
+.filter-popup-close:hover {
+    opacity: 0.6;
+}
+
+.filter-popup-close svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* ============================================
+   ЗАГОЛОВОК
+   ============================================ */
+.filter-popup-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #2E2F38;
+    margin: 0 0 40px 0;
+    padding: 0;
+}
+
+/* ============================================
+   СЕТКА ФИЛЬТРА
+   ============================================ */
+.filter-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 40px;
+    align-items: start;
+}
+
+/* ============================================
+   ПОЛЕ ФИЛЬТРА
+   ============================================ */
+.filter-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter-label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #2E2F38;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+/* ============================================
+   INPUT
+   ============================================ */
+.filter-input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #D0D0D0;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #2E2F38;
+    outline: none;
+    transition: border-color 0.2s;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.filter-input:focus {
+    border-color: #3FACE2;
+}
+
+.filter-input::placeholder {
+    color: #999;
+}
+
+.filter-input-small {
+    width: 100%;
+}
+
+.filter-price-row {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-price-row .filter-input-small {
+    flex: 1;
+}
+
+/* ============================================
+   SELECT
+   ============================================ */
+.filter-select-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.filter-select {
+    width: 100%;
+    padding: 10px 36px 10px 14px;
+    border: 1px solid #D0D0D0;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #2E2F38;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    background: #fff;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+.filter-select:focus {
+    border-color: #3FACE2;
+}
+
+.filter-select-arrow {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* ============================================
+   ЧЕКБОКСЫ ПРОИЗВОДИТЕЛЕЙ
+   ============================================ */
+.filter-field-vendors {
+    grid-column: 3;
+    grid-row: 2; /* Было: grid-row: 2 / 4 — теперь занимает только 2-ю строку */
+}
+
+.filter-vendors-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.filter-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #2E2F38;
+    position: relative;
+}
+
+.filter-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.filter-checkbox-custom {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #D0D0D0;
+    border-radius: 3px;
+    flex-shrink: 0;
+    position: relative;
+    transition: all 0.2s;
+    background: #fff;
+}
+
+.filter-checkbox input[type="checkbox"]:checked + .filter-checkbox-custom {
+    background: #3FACE2;
+    border-color: #3FACE2;
+}
+
+.filter-checkbox input[type="checkbox"]:checked + .filter-checkbox-custom::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.filter-checkbox:hover .filter-checkbox-custom {
+    border-color: #3FACE2;
+}
+
+/* Скрытые чекбоксы */
+.filter-vendor-hidden {
+    display: none;
+}
+
+.filter-vendor-hidden.show {
+    display: flex;
+}
+
+/* ============================================
+   КНОПКА "ПОКАЗАТЬ ЕЩЁ"
+   ============================================ */
+.filter-toggle-vendors {
+    background: none;
+    border: 1px solid #3FACE2;
+    color: #3FACE2;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s;
+    align-self: flex-start;
+}
+
+.filter-toggle-vendors:hover {
+    background: #3FACE2;
+    color: white;
+}
+
+/* ============================================
+   КНОПКА ПОИСКА
+   ============================================ */
+.filter-field-submit {
+    grid-column: 3;
+    grid-row: 4; /* Строка 4 — последняя */
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.filter-submit-btn {
+    background: #3FACE2;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.filter-submit-btn:hover {
+    background: #2d9bd4;
+}
+
+/* ============================================
+   АДАПТИВНОСТЬ
+   ============================================ */
+@media (max-width: 968px) {
+    .filter-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .filter-field-vendors {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    
+    .filter-field-submit {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 640px) {
+    .filter-popup {
+        padding: 50px 20px 30px;
+    }
+    
+    .filter-popup-close {
+        top: 20px;
+        right: 20px;
+    }
+    
+    .filter-popup-title {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    
+    .filter-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .filter-field-submit {
+        grid-column: span 1;
+    }
+    
+    .filter-submit-btn {
+        width: 100%;
+    }
+}

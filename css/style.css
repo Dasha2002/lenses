@@ -17,6 +17,12 @@
 @import "/includes/carousel-brands/carousel-brands.css";
 @import "/includes/catalog/catalog.css";
 
+@import "/includes/main-product/main-product.css";
+@import "/includes/product-description/product-description.css";
+
+
+
+
 html {
   scroll-behavior: smooth;
 }

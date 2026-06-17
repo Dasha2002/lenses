@@ -48,7 +48,7 @@
             </div>
           </div>
           <div class="product_card_body">
-            <a class="product_card_name" href="#">MiSight® 1 day</a>
+            <a class="product_card_name" href="/product.php">MiSight® 1 day</a>
             <a class="product_card_vendor" href="#">Cooper Vision</a>
             <div class="product_card_article">Артикул: MiSight® 1 day</div>
             <div class="product_card_price_row">
@@ -77,7 +77,7 @@
             </div>
           </div>
           <div class="product_card_body">
-            <a class="product_card_name" href="#">MiSight® 1 day (90 линз)</a>
+            <a class="product_card_name" href="/product.php">MiSight® 1 day (90 линз)</a>
             <a class="product_card_vendor" href="#">Cooper Vision</a>
             <div class="product_card_article">Артикул: MiSight® 1 day (90 линз)</div>
             <div class="product_card_price_row">
@@ -104,7 +104,7 @@
             </div>
           </div>
           <div class="product_card_body">
-            <a class="product_card_name" href="#">Relins Perfect Cleaner 30 мл</a>
+            <a class="product_card_name" href="/product.php">Relins Perfect Cleaner 30 мл</a>
             <div class="product_card_article">Артикул: нет</div>
             <div class="product_card_price_row">
               <div class="product_card_price">899<span>₽</span></div>
@@ -138,7 +138,7 @@
             </div>
           </div>
           <div class="product_card_body">
-            <a class="product_card_name" href="#">ULTRA ONE DAY</a>
+            <a class="product_card_name" href="/product.php">ULTRA ONE DAY</a>
             <a class="product_card_vendor" href="#">Bausch&amp;Lomb</a>
             <div class="product_card_article">Артикул: нет</div>
             <div class="product_card_price_row">
@@ -173,7 +173,7 @@
             </div>
           </div>
           <div class="product_card_body">
-            <a class="product_card_name" href="#">Relins Perfect Cleaner 30 мл</a>
+            <a class="product_card_name" href="/product.php">Relins Perfect Cleaner 30 мл</a>
             <div class="product_card_article">Артикул: нет</div>
             <div class="product_card_price_row">
               <div class="product_card_price">899<span>₽</span></div>
@@ -207,7 +207,7 @@
             </div>
           </div>
           <div class="product_card_body">
-            <a class="product_card_name" href="#">ULTRA ONE DAY</a>
+            <a class="product_card_name" href="/product.php">ULTRA ONE DAY</a>
             <a class="product_card_vendor" href="#">Bausch&amp;Lomb</a>
             <div class="product_card_article">Артикул: нет</div>
             <div class="product_card_price_row">
@@ -242,7 +242,7 @@
             </div>
           </div>
           <div class="product_card_body">
-            <a class="product_card_name" href="#">MiSight® 1 day</a>
+            <a class="product_card_name" href="/product.php">MiSight® 1 day</a>
             <a class="product_card_vendor" href="#">Cooper Vision</a>
             <div class="product_card_article">Артикул: MiSight® 1 day</div>
             <div class="product_card_price_row">
@@ -271,7 +271,7 @@
             </div>
           </div>
           <div class="product_card_body">
-            <a class="product_card_name" href="#">MiSight® 1 day (90 линз)</a>
+            <a class="product_card_name" href="/product.php">MiSight® 1 day (90 линз)</a>
             <a class="product_card_vendor" href="#">Cooper Vision</a>
             <div class="product_card_article">Артикул: MiSight® 1 day (90 линз)</div>
             <div class="product_card_price_row">
@@ -298,7 +298,7 @@
             </div>
           </div>
           <div class="product_card_body">
-            <a class="product_card_name" href="#">Relins Perfect Cleaner 30 мл</a>
+            <a class="product_card_name" href="/product.php">Relins Perfect Cleaner 30 мл</a>
             <div class="product_card_article">Артикул: нет</div>
             <div class="product_card_price_row">
               <div class="product_card_price">899<span>₽</span></div>
@@ -332,7 +332,7 @@
             </div>
           </div>
           <div class="product_card_body">
-            <a class="product_card_name" href="#">ULTRA ONE DAY</a>
+            <a class="product_card_name" href="/product.php">ULTRA ONE DAY</a>
             <a class="product_card_vendor" href="#">Bausch&amp;Lomb</a>
             <div class="product_card_article">Артикул: нет</div>
             <div class="product_card_price_row">

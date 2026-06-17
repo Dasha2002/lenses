@@ -1,3 +1,28 @@
+// Фиксированная шапка при скролле
+const headerScrolled = document.getElementById('headerScrolled');
+const headerMain = document.querySelector('.header-main');
+let lastScrollTop = 0;
+let scrollThreshold = 300; 
+
+if (headerMain) {
+    scrollThreshold = headerMain.offsetHeight + 50;
+}
+
+window.addEventListener('scroll', function() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (scrollTop > scrollThreshold) {
+        headerScrolled.classList.add('active');
+    } else {
+        headerScrolled.classList.remove('active');
+    }
+    
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+}, false);
+
+
+
+
 // popap-record
 document.querySelectorAll('.popap-record-btn').forEach(function(btn) {
     btn.addEventListener('click', function(e) {
@@ -218,9 +243,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-
-
 // Секция service_main
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -347,3 +369,114 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+
+
+
+
+// Секция main-product
+// Simple slider functionality
+    const items = document.querySelectorAll('.card-slider__item');
+    const thumbs = document.querySelectorAll('.card-slider__thumb');
+    let currentIndex = 0;
+
+    function showItem(index) {
+        items.forEach((item, i) => {
+            item.classList.remove('active');
+            thumbs[i].classList.remove('active');
+            if (i === index) {
+                item.classList.add('active');
+                thumbs[i].classList.add('active');
+            }
+        });
+        currentIndex = index;
+    }
+
+    thumbs.forEach((thumb, index) => {
+        thumb.addEventListener('click', () => showItem(index));
+    });
+
+    document.querySelectorAll('.slider-controls button')[0].addEventListener('click', () => {
+        const newIndex = currentIndex === 0 ? items.length - 1 : currentIndex - 1;
+        showItem(newIndex);
+    });
+
+    document.querySelectorAll('.slider-controls button')[1].addEventListener('click', () => {
+        const newIndex = currentIndex === items.length - 1 ? 0 : currentIndex + 1;
+        showItem(newIndex);
+    });
+
+
+
+
+
+    // секция product-description
+    const tabs = document.querySelectorAll('.shop-product-data__nav li');
+    const tabContents = document.querySelectorAll('.desc-area');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Remove active class from all tabs
+            tabs.forEach(t => t.classList.remove('active-tab'));
+            tabContents.forEach(content => content.classList.remove('active-area'));
+            
+            // Add active class to clicked tab
+            this.classList.add('active-tab');
+            
+            // Show corresponding content
+            const targetId = this.querySelector('a').getAttribute('href').substring(1);
+            document.getElementById(targetId).classList.add('active-area');
+        });
+    });
+
+    // Star rating functionality
+    const stars = document.querySelectorAll('.tpl-stars span');
+    const ratingInput = document.querySelector('.tpl-stars input[type="hidden"]');
+
+    stars.forEach(star => {
+        star.addEventListener('click', function() {
+            const rating = this.getAttribute('data-rating');
+            ratingInput.value = rating;
+            
+            // Update stars
+            stars.forEach((s, index) => {
+                if (index < rating) {
+                    s.classList.add('active');
+                    s.style.color = '#ffc107';
+                } else {
+                    s.classList.remove('active');
+                    s.style.color = '#ddd';
+                }
+            });
+        });
+
+        star.addEventListener('mouseenter', function() {
+            const rating = this.getAttribute('data-rating');
+            stars.forEach((s, index) => {
+                if (index < rating) {
+                    s.style.color = '#ffc107';
+                } else {
+                    s.style.color = '#ddd';
+                }
+            });
+        });
+    });
+
+    document.querySelector('.tpl-stars').addEventListener('mouseleave', function() {
+        const currentRating = ratingInput.value;
+        stars.forEach((s, index) => {
+            if (index < currentRating) {
+                s.style.color = '#ffc107';
+            } else {
+                s.style.color = '#ddd';
+            }
+        });
+    });
+
+    // Form submission
+    document.querySelector('.tpl-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Спасибо за ваш отзыв! Он будет опубликован после модерации.');
+    });

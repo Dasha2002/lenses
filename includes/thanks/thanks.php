@@ -1,6 +1,4 @@
 <section class="thanks">
-    <link rel="stylesheet" href="/t/v10966/images/css/new_style/fillial.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
     <div class="thanks_head">
         <h2 class="thanks_head_title">Благодарности и награды</h2>
         <p class="thanks_head_text">Мы ценим доверие пациентов и партнёров. Благодарности от ведущих производителей контактных линз подтверждают профессиональный подход наших специалистов, качество подбора и внимательное отношение к здоровью зрения.</p>
@@ -23,5 +21,4 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 </section>

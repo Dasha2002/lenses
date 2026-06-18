@@ -373,9 +373,9 @@
         prevEl: '.products_slider .swiper-button-prev',
       },
       breakpoints: {
-        520:  { slidesPerView: 2,  spaceBetween: 18 },
-        820:  { slidesPerView: 3,  spaceBetween: 18 },
-        1100: { slidesPerView: 4,  spaceBetween: 18 },
+        600:  { slidesPerView: 2,  spaceBetween: 18 },
+        930:  { slidesPerView: 3,  spaceBetween: 18 },
+        1200: { slidesPerView: 4,  spaceBetween: 18 },
       },
     });
   });

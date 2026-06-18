@@ -1,0 +1,51 @@
+.service__content {
+  color: #222 !important;
+  line-height: 1.6 !important;
+  padding: 20px !important;
+  max-width: 800px !important;
+  margin: 0 auto 30px auto !important;
+
+  .service__title {
+    font-size: 2rem !important;
+    color: #1c355e !important;
+    margin: 0 0 16px 0;
+  }
+
+  p {
+    margin: 1rem 0 !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+    margin-top: 2rem !important;
+    color: #3a3a3a !important;
+    border-bottom: 2px solid #e0e0e0 !important;
+    padding-bottom: 5px !important;
+  }
+
+  h3 {
+    font-size: 1.2rem !important;
+    margin-top: 1.5rem !important;
+    color: #444 !important;
+  }
+
+  ul {
+    padding-left: 20px !important;
+    margin: 1rem 0 !important;
+
+    li {
+      margin-bottom: 0.5rem !important;
+    }
+  }
+
+  button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #3FACE2;
+    color: #fff;
+    cursor: pointer;
+  }
+}

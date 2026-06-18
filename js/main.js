@@ -347,3 +347,34 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+// Секция FAQ: аккордеон
+document.addEventListener("DOMContentLoaded", function () {
+  const faq = document.querySelector(".frequent_questions");
+  if (!faq) return;
+
+  const blocks = faq.querySelectorAll(".frequent_questions_block");
+
+  blocks.forEach(function (block) {
+    const head = block.querySelector(".frequent_questions_block_head");
+    const subtext = block.querySelector(".frequent_questions_block_subtext");
+    if (!head || !subtext) return;
+
+    head.addEventListener("click", function () {
+      const isOpen = block.classList.contains("open");
+
+      // закрываем все остальные (одновременно открыт только один)
+      blocks.forEach(function (other) {
+        other.classList.remove("open");
+        const otherSubtext = other.querySelector(".frequent_questions_block_subtext");
+        if (otherSubtext) otherSubtext.classList.add("hidden");
+      });
+
+      // открываем текущий, если он был закрыт
+      if (!isOpen) {
+        block.classList.add("open");
+        subtext.classList.remove("hidden");
+      }
+    });
+  });
+});

@@ -16,6 +16,12 @@
 @import "/includes/popup-overlay/popup-overlay.css";
 @import "/includes/carousel-brands/carousel-brands.css";
 @import "/includes/catalog/catalog.css";
+@import "/includes/article-page/article-page.css";
+@import "/includes/service-detail-page/service-detail-page.css";
+@import "/includes/viewed-products/viewed-products.css";
+@import "/includes/faq/faq.css";
+@import "/includes/specialists-slider/specialists-slider.css";
+@import "/includes/map-section/map-section.css";
 
 html {
   scroll-behavior: smooth;
@@ -100,4 +106,20 @@ button:disabled,
 
   --button-border-radius: 10px;
   --font-bum-bum: "Ura Bum Bum SP", sans-serif;
+}
+
+a {
+  color: #3face2;
+}
+
+.services__main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px 0 40px;
+  box-sizing: border-box;
+
+  @media (max-width: 650px) {
+    padding: 20px;
+  }
 }

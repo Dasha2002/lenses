@@ -8,7 +8,7 @@
             <a href="/services">Услуги</a>
             <a href="/oplata">Оплата</a>
             <a href="/akcii">Акции</a>
-            <a href="/gift-certificates">Подарочные сертификаты</a>
+            <a href="/certificates.php">Подарочные сертификаты</a>
             <a href="/portfolio">Наши специалисты</a>
             <a href="/article.php">Статьи</a>
             <a href="/kontakty">Контакты</a>

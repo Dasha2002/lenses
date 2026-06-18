@@ -480,3 +480,8 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         alert('Спасибо за ваш отзыв! Он будет опубликован после модерации.');
     });
+
+
+
+
+

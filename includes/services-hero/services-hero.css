@@ -1,0 +1,146 @@
+/* ===========================================================
+   СЕКЦИЯ «ГЕРО / ВАШ ПУТЬ К ИДЕАЛЬНОМУ ЗРЕНИЮ»
+   Синий контейнер: текст и кнопки слева, изображение справа.
+   =========================================================== */
+
+.services_hero {
+  --brand: #3face2; /* акцентный голубой */
+  --ink: #2e2f38; /* заголовок */
+  --muted: #2e2f38; /* подзаголовок */
+
+  margin: 0 auto 40px;
+  padding: 0 50px;
+  box-sizing: border-box;
+  width: 100%;
+
+  @media (max-width: 650px) {
+    padding: 0 20px;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  /* синий контейнер */
+  .services_hero_inner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    background:
+      url("/includes/services-hero/assets/circles.png") bottom right / contain no-repeat,
+      linear-gradient(to right, #d4edfc 30%, #d4edfc4d);
+    padding: 56px 60px;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    overflow: visible;
+
+    .services_hero_img {
+      position: absolute;
+      bottom: 0;
+      right: 60px;
+
+      @media (max-width: 650px) {
+        width: 75%;
+        right: 50%;
+        translate: 50% 0;
+      }
+    }
+
+    @media (max-width: 1100px) {
+      height: 600px;
+      align-items: flex-start;
+      background: linear-gradient(to right, #d4edfc 30%, #d4edfc4d);
+    }
+  }
+
+  /* левая колонка: текст и кнопки */
+  .services_hero_content {
+    position: relative;
+    z-index: 2; /* поверх декоративного круга */
+    flex: 1 1 auto;
+    max-width: 600px;
+  }
+
+  .services_hero_title {
+    margin: 0 0 14px;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--ink);
+  }
+
+  .services_hero_subtitle {
+    margin: 0 0 28px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--muted);
+  }
+
+  /* кнопки (без класса .btn) */
+  .services_hero_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  .services_hero_btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background: #fff;
+    color: var(--brand);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(44, 172, 227, 0.22);
+    }
+  }
+
+  /* правая колонка: изображение (вставляется вручную) */
+  .services_hero_media {
+    position: relative;
+    z-index: 2; /* поверх декоративного круга */
+    flex: 0 0 auto;
+    align-self: stretch;
+  }
+
+  /* --- АДАПТИВ --- */
+  @media (max-width: 900px) {
+    .services_hero_inner {
+      padding: 40px 32px;
+    }
+
+    .services_hero_title {
+      font-size: 30px;
+    }
+
+    .services_hero_content {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 650px) {
+    padding: 0 20px;
+
+    .services_hero_inner {
+      padding: 28px 22px;
+    }
+
+    .services_hero_btn {
+      flex: 1 1 auto;
+    }
+  }
+}

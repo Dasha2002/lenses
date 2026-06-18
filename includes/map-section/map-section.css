@@ -5,41 +5,59 @@
    =========================================================== */
 
 .map {
-  --brand:     #3FACE2;   /* телефон, кнопка */
-  --brand-dark:#36a0d6;
-  --ink:       #4f565d;   /* название салона */
-  --strong:    #565d64;   /* «Время работы» */
-  --muted:     #8a9097;   /* часы, примечание */
-  --card-bg:   #eef5f9;   /* фон карточки */
+  --brand: #3face2; /* телефон, кнопка */
+  --brand-dark: #36a0d6;
+  --ink: #4f565d; /* название салона */
+  --strong: #565d64; /* «Время работы» */
+  --muted: #8a9097; /* часы, примечание */
+  --card-bg: #eef5f9; /* фон карточки */
 
-  --radius:      24px;    /* скругление карты */
-  --card-radius: 16px;    /* скругление карточек */
+  --radius: 24px; /* скругление карты */
+  --card-radius: 16px; /* скругление карточек */
 
-  max-width: 1340px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 50px;
   box-sizing: border-box;
   position: relative;
 
-  *, *::before, *::after { box-sizing: border-box; }
+  @media (max-width: 650px) {
+    padding: 0 20px;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
   /* --- КАРТА --- */
   .map_card {
     position: relative;
-    z-index: 1;             /* замыкаем внутренние z-index Яндекса */
-    /* текучая высота: масштабируется вместе с шириной экрана
-       (минимум 300px, в норме ~38vw, максимум 500px) */
-    height: clamp(300px, 38vw, 500px);
+    z-index: 1; /* замыкаем внутренние z-index Яндекса */
+    width: 100%; /* ширина тянется за контейнером и сжимается вместе с ним */
+    height: 500px; /* постоянная высота */
     border-radius: var(--radius);
-    overflow: hidden;       /* обрезаем тайлы по скруглению */
-    background: #dfeaf0;    /* заглушка, пока карта не загрузилась */
+    overflow: hidden; /* обрезаем тайлы по скруглению */
+    background: #dfeaf0; /* заглушка, пока карта не загрузилась */
+
+    /* Яндекс рендерит карту в дочерний <ymaps> с шириной в px,
+       проставленной при инициализации. Заставляем его следовать
+       за контейнером, чтобы карта сжималась по ширине. */
+    & > ymaps {
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    .ymaps-2-1-79-map-bg {
+      width: unset !important;
+    }
   }
 
   /* --- КАРТОЧКИ АДРЕСОВ --- */
   .map_blocks {
     position: relative;
-    z-index: 2;             /* поверх карты */
-    margin-top: -140px;     /* заезжают на карту снизу */
+    z-index: 2; /* поверх карты */
+    margin-top: -140px; /* заезжают на карту снизу */
     padding: 0 24px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -49,7 +67,7 @@
       background: var(--card-bg);
       border-radius: var(--card-radius);
       padding: 22px 26px 26px;
-      box-shadow: 0 12px 32px rgba(31, 147, 200, .12);
+      box-shadow: 0 12px 32px rgba(31, 147, 200, 0.12);
       display: flex;
       flex-direction: column;
 
@@ -67,7 +85,9 @@
           flex: 0 0 auto;
           margin-top: 2px;
         }
-        .svg-icon { color: #7b828a; }
+        .svg-icon {
+          color: #7b828a;
+        }
 
         span {
           font-size: 19px;
@@ -82,11 +102,16 @@
         font-size: 14px;
         line-height: 1.5;
         font-weight: 400;
-        color: #3F3F3F;
+        color: #3f3f3f;
 
-        b { color: #3F3F3F; font-weight: 700; }
+        b {
+          color: #3f3f3f;
+          font-weight: 700;
+        }
 
-        .map_block_note { text-transform: uppercase; }
+        .map_block_note {
+          text-transform: uppercase;
+        }
       }
 
       /* телефон */
@@ -119,9 +144,11 @@
           font-weight: 600;
           font-family: inherit;
           cursor: pointer;
-          transition: background .15s ease;
+          transition: background 0.15s ease;
 
-          &:hover { background: var(--brand-dark); }
+          &:hover {
+            background: var(--brand-dark);
+          }
         }
       }
     }
@@ -129,7 +156,9 @@
 
   /* --- АДАПТИВ --- */
   @media (max-width: 1100px) {
-    .map_blocks { grid-template-columns: 1fr 1fr; }
+    .map_blocks {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   @media (max-width: 700px) {
@@ -143,5 +172,7 @@
 
 /* уважать «уменьшить анимацию» */
 @media (prefers-reduced-motion: reduce) {
-  .map * { transition: none !important; }
+  .map * {
+    transition: none !important;
+  }
 }

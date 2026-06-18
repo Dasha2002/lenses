@@ -31,6 +31,8 @@ $pageDescription = 'Сеть салонов оптики';
     <?php include __DIR__ . '/includes/header/header.php'; ?>
     
     <main class="services__main">
+        <?php include __DIR__ . '/includes/services-hero/services-hero.php'; ?>
+        <?php include __DIR__ . '/includes/our-services/our-services.php'; ?>
         <?php include __DIR__ . '/includes/map-section/map-section.php'; ?>
         <?php include __DIR__ . '/includes/specialists-slider/specialists-slider.php'; ?>
         <?php include __DIR__ . '/includes/faq/faq.php'; ?>

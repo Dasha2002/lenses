@@ -85,7 +85,7 @@
       var map = new ymaps.Map('map', {
         center: [59.9386, 30.3141],   // центр (Санкт-Петербург)
         zoom: 7,
-        controls: ['zoomControl']
+        controls: ['zoomControl'],
       }, {
         suppressMapOpenBlock: true
       });

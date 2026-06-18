@@ -1,0 +1,92 @@
+.our_services {
+  --card-bg: #d4edfc; /* фон карточки */
+  --card-all-bg: #3face2; /* фон карточки «Все услуги» */
+  --ink: #1c1f3a; /* текст карточки */
+
+  margin: 0 auto 40px;
+  padding: 0 50px;
+  box-sizing: border-box;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  .our_services_title {
+    margin: 0 0 24px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--ink);
+  }
+
+  .our_services_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  /* карточка-ссылка */
+  .our_services_card {
+    flex: 0 0 auto; /* ширина по содержимому */
+    max-width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 16px 20px;
+    text-decoration: none;
+    color: var(--ink);
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      background 0.2s ease;
+
+    .our_services_card_text {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.3;
+    }
+
+    /* кружок со стрелкой */
+    .our_services_card_arrow {
+      flex: 0 0 auto;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #fff;
+      color: var(--card-all-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        width: 18px;
+        height: 18px;
+        display: block;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(44, 172, 227, 0.18);
+    }
+
+    /* карточка «Все услуги» */
+    &.our_services_card_all {
+      background: var(--card-all-bg);
+      color: #fff;
+    }
+  }
+
+  @media (max-width: 650px) {
+    padding: 0 20px;
+
+    .our_services_card {
+      width: 100%;
+    }
+  }
+}

@@ -23,6 +23,12 @@
 @import "/includes/specialists-slider/specialists-slider.css";
 @import "/includes/map-section/map-section.css";
 
+@import "/includes/main-product/main-product.css";
+@import "/includes/product-description/product-description.css";
+
+
+
+
 html {
   scroll-behavior: smooth;
 }

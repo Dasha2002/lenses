@@ -30,18 +30,9 @@ $pageDescription = 'Сеть салонов оптики';
     <?php include __DIR__ . '/includes/popap-filter/popap-filter.php'; ?>
     <?php include __DIR__ . '/includes/catalog/catalog.php'; ?>
     <?php include __DIR__ . '/includes/header/header.php'; ?>
-    <?php include __DIR__ . '/includes/service_main/service_main.php'; ?>
-    <?php include __DIR__ . '/includes/carousel-brands/carousel-brands.php'; ?>
+    <?php include __DIR__ . '/includes/main-product/main-product.php'; ?>
+    
 
-    <?php include __DIR__ . '/includes/main/main.php'; ?>
-    <?php include __DIR__ . '/includes/category/category.php'; ?>
-    <?php include __DIR__ . '/includes/news/news.php'; ?>
-    <?php include __DIR__ . '/includes/about/about.php'; ?>
-    <?php include __DIR__ . '/includes/thanks/thanks.php'; ?>
-    <?php include __DIR__ . '/includes/how-work/how-work.php'; ?>
-    <?php include __DIR__ . '/includes/social-stories/social-stories.php'; ?>
-    <?php include __DIR__ . '/includes/reviews/reviews.php'; ?>
-    <?php include __DIR__ . '/includes/mailing/mailing.php'; ?>
 
     <?php include __DIR__ . '/includes/footer/footer.php'; ?>
     <!-- Ваши скрипты -->

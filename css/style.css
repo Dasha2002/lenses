@@ -33,6 +33,17 @@
 @import "/includes/stock/stock.css";
 @import "/includes/payment/payment.css";
 
+/* Страница мягкие линзы */
+@import "/includes/soft-lenses/soft-lenses-1.css";
+@import "/includes/soft-lenses/soft-lenses-2.css";
+@import "/includes/soft-lenses/soft-lenses-3.css";
+@import "/includes/soft-lenses/soft-lenses-4.css";
+@import "/includes/soft-lenses/soft-lenses-5.css";
+@import "/includes/soft-lenses/soft-lenses-6.css";
+@import "/includes/faq-soft-lenses/faq-soft-lenses.css";
+@import "/includes/reviews-soft-lenses/reviews-soft-lenses.css";
+@import "/includes/gift/gift.css";
+@import "/includes/consultation/consultation.css";
 
 
 html {
@@ -46,6 +57,12 @@ body {
   width: 100%;
 
   margin: 15px 0 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .popap-record-btn {
@@ -106,18 +123,6 @@ button:disabled,
     max-width: none;
     font-size: 14px;
   }
-}
-
-:root {
-  --color-orange: #f79b45;
-  --color-green: #9ac557;
-  --color-sky: #a2d9f7;
-  --color-blue: #69b8e2;
-  --color-purple: #b1a4e2;
-  --color-dark: #141515;
-
-  --button-border-radius: 10px;
-  --font-bum-bum: "Ura Bum Bum SP", sans-serif;
 }
 
 a {

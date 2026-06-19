@@ -96,7 +96,7 @@
                     <p>Специализированные однодневные контактные линзы для замедления прогрессирования близорукости у детей и подростков</p>
                     <button class="btn btn-white">Подробнее</button>
                 </div>
-                <img src="/assets/kidlens.png" alt="Girl with phone" class="lens-image">
+                <img src="/assets/kidlens.png" alt="Girl with phone" class="lens-image-service">
             </div>
         </a>
 
@@ -107,7 +107,7 @@
                 <p>Современное решение для коррекции зрения при сложных аномалиях рефракции</p>
                 <button class="btn btn-white">Подробнее</button>
             </div>
-            <img src="/assets/bco.cb2fd364-9786-48ed-bfac-0b6abe9d88f2.png" alt="Woman with lens" class="lens-image">
+            <img src="/assets/bco.cb2fd364-9786-48ed-bfac-0b6abe9d88f2.png" alt="Woman with lens" class="lens-image-service">
         </div>
     </div>
 

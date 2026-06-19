@@ -89,14 +89,17 @@
 
     <!-- Middle Section -->
     <div class="middle-section">
-        <div class="lens-block soft-lenses">
-            <div class="lens-content">
-                <h3>Мягкие контактные линзы</h3>
-                <p>Специализированные однодневные контактные линзы для замедления прогрессирования близорукости у детей и подростков</p>
-                <button class="btn btn-white">Подробнее</button>
+        <a href="/soft-lenses-page.php">
+            <div class="lens-block soft-lenses">
+                <div class="lens-content">
+                    <h3>Мягкие контактные линзы</h3>
+                    <p>Специализированные однодневные контактные линзы для замедления прогрессирования близорукости у детей и подростков</p>
+                    <button class="btn btn-white">Подробнее</button>
+                </div>
+                <img src="/assets/kidlens.png" alt="Girl with phone" class="lens-image">
             </div>
-            <img src="/assets/kidlens.png" alt="Girl with phone" class="lens-image">
-        </div>
+        </a>
+
 
         <div class="lens-block hard-lenses">
             <div class="lens-content">

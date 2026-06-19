@@ -1,0 +1,162 @@
+.container-gift {
+    padding: 20px 100px;
+}
+.offer-section {
+    background: #e3f2fd;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.offer-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.btn-primary {
+    background-color: #3498db;
+    color: white !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    border: none;
+}
+.offer-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(315deg, #2d8ab8, #3FACE2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+.container-gift {
+    padding: 20px 100px;
+}
+
+
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .container-gift {
+        padding: 20px 60px;
+    }
+
+    .offer-section {
+        padding: 35px 25px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container-gift {
+        padding: 20px 40px;
+    }
+
+    .offer-section {
+        padding: 30px 25px;
+    }
+
+    .offer-title {
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container-gift {
+        padding: 20px 20px;
+    }
+
+    .offer-section {
+        padding: 30px 20px;
+        margin-bottom: 40px;
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .offer-content {
+        flex-direction: column; 
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .offer-icon {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto; 
+    }
+
+    .offer-icon svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .offer-text {
+        width: 100%;
+    }
+
+    .offer-title {
+        font-size: 18px;
+        line-height: 1.4;
+        margin-bottom: 8px;
+    }
+
+    .offer-subtitle {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .btn-primary {
+        width: auto;
+        height: auto;
+        padding: 14px 25px;
+        font-size: 15px;
+        line-height: normal !important;
+        display: inline-block; 
+    }
+}
+
+@media (max-width: 480px) {
+    .container-gift {
+        padding: 15px 15px;
+    }
+
+    .offer-section {
+        padding: 25px 20px;
+        border-radius: 12px;
+        margin-bottom: 30px;
+    }
+
+    .offer-content {
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .offer-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .offer-icon svg {
+        width: 26px;
+        height: 26px;
+    }
+
+    .offer-title {
+        font-size: 17px;
+    }
+
+    .offer-subtitle {
+        font-size: 13px;
+    }
+
+    .btn-primary {
+        padding: 14px 20px;
+        font-size: 15px;
+    }
+}

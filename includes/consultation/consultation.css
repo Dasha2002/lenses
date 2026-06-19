@@ -1,0 +1,66 @@
+/* Consultation Section */
+.container-consult {
+    padding: 20px 100px;
+}
+.consultation-section {
+    background: linear-gradient(135deg, #3498db 0%, #2c78b3 100%);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.consultation-title {
+    font-size: 2rem !important;
+    margin-bottom: 15px !important;
+    color: #fff;
+}
+
+.consultation-subtitle {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    display: block !important;
+    font-size: 16px;
+}
+
+.btn-white {
+    background: white;
+    color: #3498db !important;
+    border: none;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: normal;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-white:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+}
+.consultation-subtitle {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    display: block !important;
+    font-size: 16px;
+    color: #fff;
+}
+
+@media screen and (max-width: 550px) {
+    .container-consult {
+        padding: 20px 20px;
+    }
+    .btn-white {
+
+    }
+    .consultation-section {
+        padding: 20px;
+    }
+}

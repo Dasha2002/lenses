@@ -1,0 +1,165 @@
+/* Lens Info Section */
+.lens-info-section {
+    background-image: url('/assets/mkl_lens_bg.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.care {
+    margin-bottom: 60px;
+}
+
+.lens-info-content-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 60px;
+    align-items: center;
+}
+
+.lens-info-column {
+    padding: 20px;
+}
+
+.lens-info-title {
+    font-size: 1.4rem !important;
+    margin-bottom: 20px !important;
+    color: var(--secondary-color);
+}
+
+.lens-info-text {
+    color: var(--gray);
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.lens-info-text:last-child {
+    margin-bottom: 0;
+}
+
+.lens-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.parallax-img {
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .lens-info-section {
+        padding: 20px;
+    }
+
+    .lens-info-content {
+        gap: 0;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        line-height: 1.3;
+        margin-bottom: 15px !important;
+    }
+
+    .section-title {
+        font-size: 1.8rem!important;
+    }
+
+    .product-card-content {
+        padding: 25px;
+        padding-top: 0;
+    }
+
+    .product-image {
+        height: 300px;
+    }
+
+    .product-image::before {
+        height: 90px;
+    }
+
+    .offer-section, .offer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .consultation-title {
+        font-size: 1.6rem;
+    }
+
+    .info-content,
+    .lens-info-content {
+        grid-template-columns: 1fr;
+    }
+
+    .info-content {
+        padding: 20px;
+        border-radius: 15px;
+        gap: 0;
+    }
+
+    .info-column:first-child {
+        height: 200px;
+        border-radius: 15px;
+    }
+
+    .info-column:first-child::before {
+        background: linear-gradient(0deg, #fff 10%, transparent);
+        bottom: 0;
+        width: 100%;
+        height: 65%;
+    }
+
+    .header-section .container {
+        padding: 0;
+    }
+
+    .tag {
+        font-size: 12px;
+    }
+
+    .tag svg {
+        width: 18px;
+    }
+
+    .consultation-section {
+        padding: 35px 25px;
+        border-radius: 20px;
+        margin-bottom: 40px;
+    }
+
+    .offer-section {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .button-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn {
+        height: 55px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .products-container {
+        grid-template-columns: 1fr;
+    }
+
+    .advantages-container {
+        grid-template-columns: 1fr;
+    }
+
+    .reviews-container {
+        grid-template-columns: 1fr;
+    }
+}

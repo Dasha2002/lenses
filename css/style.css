@@ -29,6 +29,9 @@
 @import "/includes/main-product/main-product.css";
 @import "/includes/articles/articles.css";
 
+@import "/includes/certificate/certificate.css";
+@import "/includes/stock/stock.css";
+@import "/includes/payment/payment.css";
 
 
 
@@ -37,7 +40,7 @@ html {
 }
 
 body {
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: "Effra;", sans-serif;
   display: flex;
   flex-direction: column;
   width: 100%;

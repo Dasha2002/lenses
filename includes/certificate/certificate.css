@@ -1,0 +1,100 @@
+.certificate-page {
+    padding: 20px;
+}
+
+.site-main__inner {
+    padding: 0 40px 50px;
+    background: linear-gradient(to bottom, #FFFFFF, #EEF5F9) !important;
+    display: flex;
+    flex-direction: column;
+}
+
+p, .site-main__inner p span, .inf-text-certificate {
+    margin: 0;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #4B4E54;
+}
+
+.site-main__inner p span {
+    font-size: 20px;
+}
+
+.inf-text-certificate {
+    font-size: 16px;
+}
+
+.table-wrapper {
+    margin: 30px 0;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-wrapper table {
+    border-collapse: collapse;
+}
+
+.table-wrapper table td {
+    padding: 5px;
+    vertical-align: top;
+}
+
+.table-wrapper table img {
+    height: auto;
+    display: block;
+}
+
+/* Стили для горизонтальной прокрутки */
+.table-wrapper::-webkit-scrollbar {
+    height: 5px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background: #2cace3;
+    border-radius: 3px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@media (max-width: 768px) {
+    .site-main__inner {
+        padding: 0 20px 30px;
+    }
+
+    .site-main__inner p span {
+        font-size: 18px;
+    }
+
+    .inf-text-certificate {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .certificate-page {
+        padding: 10px;
+    }
+
+    .site-main__inner {
+        padding: 0 15px 25px;
+    }
+
+    .site-main__inner p span {
+        font-size: 16px;
+    }
+
+    
+
+    .inf-text-certificate {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+}

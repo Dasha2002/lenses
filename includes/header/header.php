@@ -6,9 +6,9 @@
             <a href="/">Главная</a>
             <a href="/dostavka">Доставка</a>
             <a href="/services">Услуги</a>
-            <a href="/oplata">Оплата</a>
-            <a href="/akcii">Акции</a>
-            <a href="/gift-certificates">Подарочные сертификаты</a>
+            <a href="/payment-page.php">Оплата</a>
+            <a href="/stock-page.php">Акции</a>
+            <a href="/certificates.php">Подарочные сертификаты</a>
             <a href="/portfolio">Наши специалисты</a>
             <a href="/article.php">Статьи</a>
             <a href="/kontakty">Контакты</a>

@@ -247,13 +247,14 @@
     opacity: 0.95;
 }
 
-.lens-image {
+.lens-image-service {
     position: absolute;
     right: 0;
     top: 70%;
     translate: 0 -50%;
     max-width: 45%;
     height: max-content;
+    box-shadow: none;
 }
 
 /* ============================================
@@ -418,7 +419,7 @@
         font-size: 15px;
     }
     
-    .lens-image {
+    .lens-image-service {
         width: 180px;
     }
 }
@@ -492,7 +493,7 @@
         margin-bottom: 15px;
     }
     
-    .lens-image {
+    .lens-image-service {
         position: absolute;
         right: 0;
         opacity: 0.7;
@@ -581,7 +582,7 @@
         font-size: 13px;
     }
     
-    .lens-image {
+    .lens-image-service {
         position: absolute;
         right: 0;
         opacity: 0.7;

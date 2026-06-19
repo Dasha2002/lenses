@@ -401,6 +401,39 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Страница FAQ: поиск по вопросам и ответам
+document.addEventListener("DOMContentLoaded", function () {
+  const search = document.getElementById("faqSearch");
+  const faq = document.querySelector(".frequent_questions");
+  if (!search || !faq) return;
+
+  const blocks = Array.prototype.slice.call(
+    faq.querySelectorAll(".frequent_questions_block")
+  );
+  const noResults = document.getElementById("faqNoResults");
+
+  search.addEventListener("input", function () {
+    const query = search.value.trim().toLowerCase();
+    let visibleCount = 0;
+
+    blocks.forEach(function (block) {
+      const question = block.querySelector(".frequent_questions_block_head h3");
+      const answer = block.querySelector(".frequent_questions_block_subtext");
+      const haystack = (
+        (question ? question.textContent : "") +
+        " " +
+        (answer ? answer.textContent : "")
+      ).toLowerCase();
+
+      const match = haystack.indexOf(query) !== -1;
+      block.classList.toggle("faq_no_match", !match);
+      if (match) visibleCount++;
+    });
+
+    if (noResults) noResults.hidden = visibleCount !== 0;
+  });
+});
+
 
 
 

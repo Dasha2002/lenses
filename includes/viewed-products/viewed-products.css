@@ -20,6 +20,10 @@
   padding: 0 50px;
   box-sizing: border-box;
 
+  @media (max-width: 650px) {
+    padding: 0 20px;
+  }
+
   *,
   *::before,
   *::after {
@@ -33,7 +37,7 @@
     h2 {
       margin: 0;
       font-size: 30px;
-      font-weight: 800;
+      font-weight: 700;
       color: #2b2f38;
       letter-spacing: 0.2px;
     }

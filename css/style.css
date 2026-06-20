@@ -33,6 +33,7 @@
 @import "/includes/stock/stock.css";
 @import "/includes/payment/payment.css";
 @import "/includes/zkl/zkl.css";
+@import "/includes/ortho-lens/ortho-lens.css";
 
 /* Страница мягкие линзы */
 @import "/includes/soft-lenses/soft-lenses-1.css";
@@ -45,7 +46,6 @@
 @import "/includes/reviews-soft-lenses/reviews-soft-lenses.css";
 @import "/includes/gift/gift.css";
 @import "/includes/consultation/consultation.css";
-
 
 html {
   scroll-behavior: smooth;
@@ -61,9 +61,9 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .popap-record-btn {
@@ -140,4 +140,21 @@ a {
   /* @media (max-width: 650px) {
     padding: 20px;
   } */
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-button {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #3face2;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+  border-radius: 5px;
 }

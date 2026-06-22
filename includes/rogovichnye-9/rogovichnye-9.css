@@ -1,0 +1,47 @@
+.features-rogovichnye-9 {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+}
+.section-title-rogovichnye-9 {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+.section-title-rogovichnye-9 h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.section-title-rogovichnye-9::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #3FACE2;
+    border-radius: 2px;
+}
+.additional-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.additional-links a {
+    background-color: #d6ebf8;
+    padding: 6px 12px;
+    color: #4B4E54;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+    .features-rogovichnye-9 {
+        padding-top: 40px;
+    }
+    .section-title-rogovichnye-9 h2 {
+        margin: 0;
+        font-size: 22px;
+    }
+}

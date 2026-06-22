@@ -1,0 +1,213 @@
+.features {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #3FACE2;
+    border-radius: 2px;
+}
+
+.container-features p {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.feature-card i {
+    font-size: 3rem;
+    color: #3FACE2;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.feature-card h3 {
+    font-size: 20px !important;
+    margin-bottom: 15px !important;
+    color: #333;
+    font-weight: 600;
+}
+
+.feature-card p {
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 5px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* ===== АДАПТИВНОСТЬ ===== */
+
+/* Планшеты (до 1024px) */
+@media (max-width: 1024px) {
+    .features {
+        padding: 50px 20px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .feature-card {
+        padding: 25px 20px;
+    }
+}
+
+/* Планшеты маленькие (до 768px) */
+@media (max-width: 768px) {
+    .features {
+        padding: 40px 15px;
+    }
+
+    .section-title {
+        margin-bottom: 30px;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    .container-features > p {
+        font-size: 15px;
+        line-height: 1.6;
+        padding: 0 10px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .feature-card {
+        padding: 30px 25px;
+    }
+
+    .feature-card i {
+        font-size: 2.5rem;
+        margin-bottom: 18px;
+    }
+
+    .feature-card h3 {
+        font-size: 19px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .feature-card p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+}
+
+/* Мобильные телефоны (до 480px) */
+@media (max-width: 480px) {
+    .features {
+        padding: 35px 15px;
+    }
+
+    .section-title h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .container-features > p {
+        font-size: 14px;
+        padding: 0 5px;
+    }
+
+    .features-grid {
+        gap: 15px;
+        max-width: 100%;
+    }
+
+    .feature-card {
+        padding: 25px 20px;
+        border-radius: 12px;
+    }
+
+    .feature-card i {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+
+    .feature-card h3 {
+        font-size: 18px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .feature-card p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+/* Очень маленькие экраны (до 360px) */
+@media (max-width: 360px) {
+    .features {
+        padding: 30px 12px;
+    }
+
+    .section-title h2 {
+        font-size: 22px;
+    }
+
+    .container-features > p {
+        font-size: 13px;
+    }
+
+    .feature-card {
+        padding: 22px 18px;
+    }
+
+    .feature-card i {
+        font-size: 2rem;
+    }
+
+    .feature-card h3 {
+        font-size: 17px !important;
+    }
+
+    .feature-card p {
+        font-size: 13px;
+    }
+}

@@ -169,7 +169,7 @@ $pageDescription = 'Подбор жёстких контактных линз в
                                 <a href="/rogovichnye-linzy"><img src="includes/zkl/assets/types_3.png" alt="Роговичные линзы"></a>
                             </div>
                             <div class="lens-content">
-                                <a href="/rogovichnye-linzy"><h3>Роговичные дневные линзы</h3></a>
+                                <a href="/rogovichnye-page.php"><h3>Роговичные дневные линзы</h3></a>
                                 <p>Классические жёсткие газопроницаемые линзы для дневного ношения с высокой кислородопроницаемостью.</p>
 
                                 <h4>Показания:</h4>

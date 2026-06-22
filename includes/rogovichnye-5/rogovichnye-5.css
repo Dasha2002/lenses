@@ -1,0 +1,80 @@
+.rogovichnye-5 {
+    padding: 60px 20px;
+}
+.section-title-rogovichnye-5 {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+.section-title-rogovichnye-5::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #3FACE2;
+    border-radius: 2px;
+}
+.t-center-rogovichnye-5 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.process-timeline {
+    position: relative;
+    margin-top: 10px;
+    padding-left: 30px;
+}
+.process-timeline::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 3px;
+    height: 100%;
+    background-color: #3FACE2;
+}
+.process-step {
+    position: relative;
+    padding-bottom: 30px;
+}
+.process-step::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -34px;
+    width: 15px;
+    height: 15px;
+    background-color: #3FACE2;
+    box-shadow: 0 0 0 3px #3face245;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+}
+.process-step h3 {
+    color: #3FACE2;
+    margin-bottom: 10px !important;
+    font-size: 1.2rem;
+}
+p {
+    width: 100%;
+    margin-bottom: 5px;
+}
+ul {
+    margin-block-start: 1em !important;
+    margin-block-end: 1em !important;
+    padding-inline-start: 20px !important;
+}
+
+@media screen and (max-width: 500px) {
+    .rogovichnye-5 {
+        padding-top: 20px;
+    }
+    .section-title-rogovichnye-5 h2 {
+        font-size: 22px;
+    }
+}

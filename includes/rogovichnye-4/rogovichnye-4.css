@@ -1,0 +1,189 @@
+.features-rogovichnye-4 {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+}
+.section-title-rogovichnye-4 {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+.section-title-rogovichnye-4 h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.section-title-rogovichnye-4::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #3FACE2;
+    border-radius: 2px;
+}
+.t-center-rogovichnye-4 {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.feature-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.feature-card h3 {
+    font-size: 20px !important;
+    margin-bottom: 15px !important;
+    color: #333;
+    margin: 0;
+}
+ul {
+    margin-block-start: 1em !important;
+    margin-block-end: 1em !important;
+    padding-inline-start: 20px !important;
+}
+li {
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+    .features-rogovichnye-4 {
+        padding: 50px 20px;
+    }
+
+    .section-title-rogovichnye-4 h2 {
+        font-size: 2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .feature-card {
+        padding: 22px 18px;
+    }
+}
+
+/* Планшеты маленькие (до 768px) */
+@media (max-width: 768px) {
+    .features-rogovichnye-4 {
+        padding: 40px 15px;
+    }
+
+    .section-title-rogovichnye-4 {
+        margin-bottom: 30px;
+    }
+
+    .section-title-rogovichnye-4 h2 {
+        font-size: 1.8rem;
+    }
+
+    .t-center-rogovichnye-4 {
+        font-size: 15px;
+        margin-bottom: 25px;
+        padding: 0 10px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 600px;
+    }
+
+    .feature-card {
+        padding: 25px 20px;
+    }
+
+    .feature-card h3 {
+        font-size: 19px !important;
+    }
+
+    .feature-card ul li {
+        font-size: 15px;
+    }
+}
+
+/* Мобильные телефоны (до 480px) */
+@media (max-width: 480px) {
+    .features-rogovichnye-4 {
+        padding: 35px 15px;
+    }
+
+    .section-title-rogovichnye-4 h2 {
+        font-size: 1.6rem;
+    }
+
+    .t-center-rogovichnye-4 {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .features-grid {
+        gap: 15px;
+        max-width: 100%;
+    }
+
+    .feature-card {
+        padding: 20px 18px;
+        border-radius: 12px;
+    }
+
+    .feature-card h3 {
+        font-size: 18px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .feature-card ul {
+        padding-left: 18px;
+    }
+
+    .feature-card ul li {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 8px;
+    }
+}
+
+/* Очень маленькие экраны (до 360px) */
+@media (max-width: 360px) {
+    .features-rogovichnye-4 {
+        padding: 30px 12px;
+    }
+
+    .section-title-rogovichnye-4 h2 {
+        font-size: 1.4rem;
+    }
+
+    .t-center-rogovichnye-4 {
+        font-size: 13px;
+    }
+
+    .feature-card {
+        padding: 18px 15px;
+    }
+
+    .feature-card h3 {
+        font-size: 17px !important;
+    }
+
+    .feature-card ul li {
+        font-size: 13px;
+    }
+}
+

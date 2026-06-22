@@ -1,0 +1,221 @@
+.features-rogovichnye-6 {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+}
+
+.section-title-rogovichnye-6 {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.section-title-rogovichnye-6 h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section-title-rogovichnye-6::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #3FACE2;
+    border-radius: 2px;
+}
+
+.t-center-rogovichnye-6 {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Карточка с этапами */
+.steps-order {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.steps-order h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+.steps-order h3 i {
+    font-size: 24px;
+    color: #3FACE2;
+}
+
+.steps-order ol {
+    padding-left: 0;
+    list-style: none;
+    counter-reset: step-counter;
+}
+
+.steps-order ol li {
+    counter-increment: step-counter;
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: #333;
+    position: relative;
+    padding-left: 0;
+}
+
+.steps-order ol li::before {
+    content: counter(step-counter) ".";
+    color: #3FACE2;
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.steps-order ol li:last-child {
+    margin-bottom: 0;
+}
+
+/* ===== АДАПТИВНОСТЬ ===== */
+
+/* Планшеты (до 1024px) */
+@media (max-width: 1024px) {
+    .features-rogovichnye-6 {
+        padding: 50px 20px;
+    }
+
+    .section-title-rogovichnye-6 h2 {
+        font-size: 2rem;
+    }
+
+    .steps-order {
+        padding: 28px 25px;
+    }
+
+    .steps-order ol li {
+        font-size: 15px;
+    }
+}
+
+/* Планшеты маленькие (до 768px) */
+@media (max-width: 768px) {
+    .features-rogovichnye-6 {
+        padding: 40px 15px;
+    }
+
+    .section-title-rogovichnye-6 {
+        margin-bottom: 30px;
+    }
+
+    .section-title-rogovichnye-6 h2 {
+        font-size: 1.8rem;
+    }
+
+    .t-center-rogovichnye-6 {
+        font-size: 15px;
+        margin-bottom: 25px;
+        padding: 0 10px;
+    }
+
+    .steps-order {
+        padding: 25px 20px;
+        max-width: 100%;
+    }
+
+    .steps-order h3 {
+        font-size: 19px;
+    }
+
+    .steps-order ol li {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    .steps-order ol li::before {
+        font-size: 17px;
+    }
+}
+
+/* Мобильные телефоны (до 480px) */
+@media (max-width: 480px) {
+    .features-rogovichnye-6 {
+        padding: 35px 15px;
+    }
+
+    .section-title-rogovichnye-6 h2 {
+        font-size: 1.6rem;
+    }
+
+    .t-center-rogovichnye-6 {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .steps-order {
+        padding: 22px 18px;
+        border-radius: 10px;
+    }
+
+    .steps-order h3 {
+        font-size: 18px;
+        margin-bottom: 18px;
+    }
+
+    .steps-order h3 i {
+        font-size: 22px;
+    }
+
+    .steps-order ol li {
+        font-size: 14px;
+        margin-bottom: 10px;
+        line-height: 1.4;
+    }
+
+    .steps-order ol li::before {
+        font-size: 16px;
+    }
+}
+
+/* Очень маленькие экраны (до 360px) */
+@media (max-width: 360px) {
+    .features-rogovichnye-6 {
+        padding: 30px 12px;
+    }
+
+    .section-title-rogovichnye-6 h2 {
+        font-size: 1.4rem;
+    }
+
+    .t-center-rogovichnye-6 {
+        font-size: 13px;
+    }
+
+    .steps-order {
+        padding: 20px 15px;
+    }
+
+    .steps-order h3 {
+        font-size: 17px;
+    }
+
+    .steps-order ol li {
+        font-size: 13px;
+    }
+
+    .steps-order ol li::before {
+        font-size: 15px;
+    }
+}

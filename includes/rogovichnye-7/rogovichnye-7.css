@@ -1,0 +1,182 @@
+.rogovichnye-7 {
+    padding: 60px 20px;
+}
+.section-title-rogovichnye-7 {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+.section-title-rogovichnye-7 h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.section-title-rogovichnye-7::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #3FACE2;
+    border-radius: 2px;
+}
+.t-center-rogovichnye-7 {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.suitability-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.suitability-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    height: fit-content;
+}
+.suitability-grid h3 {
+    font-size: 26px;
+    margin: 0;
+}
+
+
+@media (max-width: 1024px) {
+    .rogovichnye-7 {
+        padding: 50px 20px;
+    }
+
+    .section-title-rogovichnye-7 h2 {
+        font-size: 2rem;
+    }
+
+    .suitability-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .suitability-card {
+        padding: 22px 18px;
+    }
+
+    .suitability-card h3 {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rogovichnye-7 {
+        padding: 40px 15px;
+    }
+
+    .section-title-rogovichnye-7 {
+        margin-bottom: 30px;
+    }
+
+    .section-title-rogovichnye-7 h2 {
+        font-size: 1.8rem;
+    }
+
+    .t-center-rogovichnye-7 {
+        font-size: 15px;
+        margin-bottom: 25px;
+        padding: 0 10px;
+    }
+
+    .suitability-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 600px;
+    }
+
+    .suitability-card {
+        padding: 25px 20px;
+    }
+
+    .suitability-card h3 {
+        font-size: 19px;
+        margin-bottom: 12px;
+    }
+
+    .suitability-card h3 i {
+        font-size: 20px;
+    }
+
+    .suitability-card ul li {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rogovichnye-7 {
+        padding: 35px 15px;
+    }
+
+    .section-title-rogovichnye-7 h2 {
+        font-size: 22px;
+        margin: 0;
+    }
+
+    .t-center-rogovichnye-7 {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .suitability-grid {
+        gap: 15px;
+        max-width: 100%;
+    }
+
+    .suitability-card {
+        padding: 20px 18px;
+        border-radius: 12px;
+    }
+
+    .suitability-card h3 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .suitability-card h3 i {
+        font-size: 18px;
+    }
+
+    .suitability-card ul {
+        padding-left: 18px;
+    }
+
+    .suitability-card ul li {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .rogovichnye-7 {
+        padding: 30px 12px;
+    }
+
+    .section-title-rogovichnye-7 h2 {
+        font-size: 1.4rem;
+    }
+
+    .t-center-rogovichnye-7 {
+        font-size: 13px;
+    }
+
+    .suitability-card {
+        padding: 18px 15px;
+    }
+
+    .suitability-card h3 {
+        font-size: 17px;
+    }
+
+    .suitability-card ul li {
+        font-size: 13px;
+    }
+}

@@ -46,6 +46,16 @@
 @import "/includes/gift/gift.css";
 @import "/includes/consultation/consultation.css";
 
+/* Страница роговичные линзы */
+@import "/includes/rogovichnye-1/rogovichnye.css";
+@import "/includes/rogovichnye-2/rogovichnye-2.css";
+@import "/includes/rogovichnye-3/rogovichnye-3.css";
+@import "/includes/rogovichnye-4/rogovichnye-4.css";
+@import "/includes/rogovichnye-5/rogovichnye-5.css";
+@import "/includes/rogovichnye-6/rogovichnye-6.css";
+@import "/includes/rogovichnye-7/rogovichnye-7.css";
+@import "/includes/rogovichnye-8/rogovichnye-8.css";
+@import "/includes/rogovichnye-9/rogovichnye-9.css";
 
 html {
   scroll-behavior: smooth;

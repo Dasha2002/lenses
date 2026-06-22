@@ -166,7 +166,7 @@ $pageDescription = 'Подбор жёстких контактных линз в
                         <!-- Роговичные линзы -->
                         <div class="lens-card">
                             <div class="lens-img">
-                                <a href="/rogovichnye-linzy"><img src="includes/zkl/assets/types_3.png" alt="Роговичные линзы"></a>
+                                <a href="/rogovichnye-page.php"><img src="includes/zkl/assets/types_3.png" alt="Роговичные линзы"></a>
                             </div>
                             <div class="lens-content">
                                 <a href="/rogovichnye-page.php"><h3>Роговичные дневные линзы</h3></a>

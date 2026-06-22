@@ -434,6 +434,63 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Страница ОК-линз: видеоинструкции (попап с видео)
+document.addEventListener("DOMContentLoaded", function () {
+  const section = document.querySelector(".video_instructions");
+  const popup = document.getElementById("videoPopup");
+  if (!section || !popup) return;
+
+  const video = popup.querySelector(".video_popup_video");
+  const source = video.querySelector("source");
+  const playBtn = popup.querySelector(".video_popup_play");
+  const closeBtn = popup.querySelector(".video_popup_close");
+
+  function openPopup(src, poster) {
+    source.src = src;
+    if (poster) {
+      video.setAttribute("poster", poster); // картинка-плейсхолдер на видео
+    } else {
+      video.removeAttribute("poster");
+    }
+    video.load();
+    playBtn.hidden = false; // показываем кнопку play по центру видео
+    popup.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closePopup() {
+    video.pause();
+    popup.classList.remove("open");
+    source.src = "";
+    video.removeAttribute("poster");
+    video.load();
+    document.body.style.overflow = "";
+  }
+
+  section.querySelectorAll(".video_card").forEach(function (card) {
+    card.addEventListener("click", function () {
+      const img = card.querySelector("img");
+      openPopup(card.dataset.video, img ? img.getAttribute("src") : "");
+    });
+  });
+
+  // запуск воспроизведения по центральной кнопке play
+  playBtn.addEventListener("click", function () {
+    video.play();
+  });
+  video.addEventListener("play", function () {
+    playBtn.hidden = true;
+  });
+
+  closeBtn.addEventListener("click", closePopup);
+  popup.addEventListener("click", function (e) {
+    if (e.target === popup) closePopup();
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && popup.classList.contains("open")) closePopup();
+  });
+});
+
 
 
 

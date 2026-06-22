@@ -1,0 +1,483 @@
+.lens_seo {
+  .welcome_lens {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+
+  .welcome_lens_contant {
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    background-size: auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: #d4edfc;
+
+    img {
+      border-radius: 0 20px 20px 0;
+    }
+  }
+
+  .welcome_lens_contant_text {
+    z-index: 1;
+    width: 40%;
+    margin: 0 50px 0 40px;
+    color: #2e2f38;
+
+    h2 {
+      font-size: 32px;
+    }
+
+    p {
+      margin: 20px 0 !important;
+      font-weight: 400; 
+    }
+  }
+
+  .welcome_lens_contant_gradient {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #d4edfc 50%, #d4edfc00 70%);
+  }
+
+  .welcome_lens_link {
+    padding-bottom: 10px;
+    display: flex;
+    overflow-x: auto;
+    margin-top: 20px;
+
+    a {
+      white-space: nowrap;
+      font-size: 22px;
+      line-height: 26px;
+      font-weight: 500;
+      margin-right: 20px;
+      padding: 20px;
+      border-radius: 20px;
+      background-color: #d4edfc;
+      text-decoration: none;
+      color: #1c1f3a;
+    }
+  }
+
+  /* --- ОБЩИЕ ОТСТУПЫ СЕКЦИЙ --- */
+  .what,
+  .whom,
+  .advantages_lenses,
+  .how,
+  .care,
+  .why {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+
+  .what h2,
+  .whom h2,
+  .advantages_lenses h2,
+  .how h2,
+  .why h2 {
+    margin-left: 20px !important;
+    font-size: 32px;
+    color: #2e2f38;
+  }
+
+  /* --- КАК РАБОТАЮТ --- */
+  .what_block {
+    background-color: #eef5f9;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+
+    p {
+      font-size: 18px;
+      font-weight: 400px;
+      color: #4b4e54;
+    }
+  }
+
+  /* --- КОМУ ПОДОЙДУТ / КАК ПОДОБРАТЬ --- */
+  .whom_block,
+  .how_block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+
+    img {
+      position: sticky;
+      top: 20px;
+      border-radius: 20px;
+      max-width: 100%;
+    }
+  }
+
+  .whom_block_text,
+  .how_block_text {
+    box-sizing: border-box;
+    background-color: #eef5f9;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #3f3f3f;
+
+    p {
+      color: #3f3f3f
+    }
+  }
+
+  .whom_block_text ul,
+  .how_block_text ul,
+  .why_block_text ul {
+    padding-left: 20px !important;
+    color: #3f3f3f;
+
+    li {
+      margin: 10px 0 !important;
+    }
+  }
+
+  /* --- ПРЕИМУЩЕСТВА --- */
+  .advantages_lenses_blocks {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .care_blocks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .why_blocks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .advantages_lenses_block,
+  .care_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .advantages_lenses_block_ico,
+  .care_block_num {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3face2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .advantages_lenses_block_ico div {
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background-color: #fff;
+
+    &:last-child {
+      transform: rotate(90deg);
+    }
+  }
+
+  .advantages_lenses_block_text {
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #eef5f9;
+
+    span {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  /* --- УХОД --- */
+  .care_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+
+    h2 {
+      margin: 0;
+    }
+    
+  }
+
+  .care_header_btn {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    gap: 10px;
+    align-items: center;
+    background-color: #3face2;
+    border-radius: 15px;
+    padding: 10px 15px;
+    text-decoration: none;
+
+    h4 {
+      margin: 0;
+    }
+
+    p {
+      color: white;
+    }
+
+    .icon {
+      box-sizing: border-box;
+      padding-left: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: #d4edfc;
+      width: 56px;
+      height: 56px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  .care_header_btn_text {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+
+    h4 {
+      color: #fff !important;
+      font-weight: 500 !important;
+    }
+  }
+
+  .care_block_text {
+    margin-top: 10px;
+    padding: 20px 10px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #eef5f9;
+
+    p {
+      color: #2e2f38;
+    }
+  }
+
+  .care_block_num {
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+  }
+
+  /* --- ПОЧЕМУ МЫ --- */
+  .why_block_text {
+    font-size: 18px;
+    line-height: 22px;
+
+    p,
+    button {
+      margin-top: 15px;
+    }
+  }
+
+  .why_block_text_block {
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #eef5f9;
+  }
+
+  #map {
+    border-radius: 20px;
+    overflow: hidden;
+
+    & > ymaps {
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    .ymaps-2-1-79-map-bg {
+      width: unset !important;
+    }
+  }
+
+  /* --- ВИДЕОИНСТРУКЦИИ --- */
+  .video_instructions {
+    margin-top: 40px;
+    padding: 0 20px;
+
+    h2 {
+      margin: 0 0 20px 20px;
+      font-size: 32px;
+      color: #2e2f38;
+    }
+  }
+
+  .video_instructions_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .video_card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #eef5f9;
+    aspect-ratio: 16 / 9;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  /* кнопка play (на карточке и по центру видео в попапе) */
+  .video_play,
+  .video_popup_play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  /* --- ПОПАП С ВИДЕО --- */
+  .video_popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+
+    &.open {
+      display: block;
+    }
+  }
+
+  .video_popup_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: min(90vw, 420px); */
+  }
+
+  .video_popup_video {
+    display: block;
+    width: 100%;
+    max-height: 85vh;
+    /* border-radius: 16px; */
+    background: #000;
+  }
+
+  .video_popup_close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    /* border-radius: 8px; */
+    background: none;
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 1;
+    cursor: pointer;
+    color: white;
+  }
+
+  .contacts-callback-btn__link {
+    background: #3face2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    width: fit-content;
+  }
+
+  @media (max-width: 968px) {
+    .whom_block,
+    .how_block,
+    .why_blocks {
+      grid-template-columns: 1fr;
+    }
+
+    .whom_block img,
+    .how_block img {
+      position: static;
+    }
+
+    .advantages_lenses_blocks {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .care_blocks {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .welcome_lens_contant_text {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .advantages_lenses_blocks,
+    .care_blocks {
+      grid-template-columns: 1fr;
+    }
+
+    .care_header {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+}

@@ -95,10 +95,10 @@ $pageDescription = 'Подбор жёстких контактных линз в
                         <!-- Ортокератологические линзы -->
                         <div class="lens-card">
                             <div class="lens-img">
-                                <a href="/ortokeratologiya-nochnye-linzy"><img src="includes/zkl/assets/types_1.png" alt="Ортокератологические линзы"></a>
+                                <a href="/ortokeratologiya-nochnye-linzy.php"><img src="includes/zkl/assets/types_1.png" alt="Ортокератологические линзы"></a>
                             </div>
                             <div class="lens-content">
-                                <a href="/ortokeratologiya-nochnye-linzy"><h3>Ортокератологические (ночные) линзы</h3></a>
+                                <a href="/ortokeratologiya-nochnye-linzy.php"><h3>Ортокератологические (ночные) линзы</h3></a>
                                 <p>Инновационный метод коррекции зрения: носите линзы ночью — видите чётко днём без очков.</p>
 
                                 <h4>Показания:</h4>
@@ -117,8 +117,8 @@ $pageDescription = 'Подбор жёстких контактных линз в
                                 </ul>
 
                                 <div class="lens-links">
-                                    <a href="/ortokeratologiya-nochnye-linzy">Подробнее</a>
-                                    <a href="/zkl/ortokeratologiya-nochnye-linzy/ceny-na-ortokeratologicheskie-linzy-v-sankt-peterburge-linz-ochki">Цены</a>
+                                    <a href="/ortokeratologiya-nochnye-linzy.php">Подробнее</a>
+                                    <a href="/ortokeratologiya-prices.php">Цены</a>
                                     <a href="/zkl/ortokeratologiya-nochnye-linzy/process-podbora-ortokeratologicheskih-linz-v-sankt-peterburge-linz-ochki">Процесс подбора</a>
                                     <a href="/zkl/ortokeratologiya-nochnye-linzy/ortokeratologicheskie-linzy-dlya-detej-v-sankt-peterburge">Для детей</a>
                                     <a href="/zkl/ortokeratologiya-nochnye-linzy/uhod-za-ortokeratologicheskimi-linzami-linz-ochki">Уход</a>
@@ -188,7 +188,7 @@ $pageDescription = 'Подбор жёстких контактных линз в
                                 </ul>
 
                                 <div class="lens-links">
-                                    <a href="/rogovichnye-linzy">Подробнее</a>
+                                    <a href="/rogovichnye-page.php">Подробнее</a>
                                     <a href="/zkl/rogovichnye-linzy/ceny-na-rogovichnye-linzy-v-sankt-peterburge-linz-ochki">Цены</a>
                                     <a href="/zkl/rogovichnye-linzy/process-podbora-rogovichnyh-linz-v-sankt-peterburge-linz-ochki">Процесс подбора</a>
                                     <a href="/zkl/rogovichnye-linzy/rogovichnye-linzy-pri-astigmatizme-v-sankt-peterburge-linz-ochki">При астигматизме</a>

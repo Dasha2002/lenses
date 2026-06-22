@@ -58,6 +58,7 @@
 @import "/includes/rogovichnye-8/rogovichnye-8.css";
 @import "/includes/rogovichnye-9/rogovichnye-9.css";
 
+@import "/includes/ortokeratologiya-prices-page/ortokeratologiya.css";
 
 
 html {
@@ -136,6 +137,9 @@ button:disabled,
     left: 16px;
     max-width: none;
     font-size: 14px;
+  }
+  .btn {
+    height: auto !important;
   }
 }
 

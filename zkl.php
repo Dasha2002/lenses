@@ -130,10 +130,10 @@ $pageDescription = 'Подбор жёстких контактных линз в
                         <!-- Склеральные линзы -->
                         <div class="lens-card">
                             <div class="lens-img">
-                                <a href="/skleralnye-linzy"><img src="includes/zkl/assets/types_2.png" alt="Склеральные линзы"></a>
+                                <a href="/skleralnye-linzy.php"><img src="includes/zkl/assets/types_2.png" alt="Склеральные линзы"></a>
                             </div>
                             <div class="lens-content">
-                                <a href="/skleralnye-linzy"><h3>Склеральные линзы</h3></a>
+                                <a href="/skleralnye-linzy.php"><h3>Склеральные линзы</h3></a>
                                 <p>Большие линзы, опирающиеся на склеру, создающие защитное увлажняющее пространство для роговицы.</p>
 
                                 <h4>Показания:</h4>
@@ -153,12 +153,12 @@ $pageDescription = 'Подбор жёстких контактных линз в
                                 </ul>
 
                                 <div class="lens-links">
-                                    <a href="/skleralnye-linzy">Подробнее</a>
-                                    <a href="/zkl/skleralnye-linzy/ceny-na-skleralnye-linzy-v-sankt-peterburge-linz-ochki">Цены</a>
-                                    <a href="/zkl/skleralnye-linzy/process-podbora-skleralnyh-linz-v-sankt-peterburge-linz-ochki">Процесс подбора</a>
-                                    <a href="/zkl/skleralnye-linzy/skleralnye-linzy-pri-keratokonuse-v-sankt-peterburge-linz-ochki">При кератоконусе</a>
-                                    <a href="/zkl/skleralnye-linzy/skleralnye-linzy-pri-sindrome-suhogo-glaza-v-sankt-peterburge-linz-ochki">При сухом глазе</a>
-                                    <a href="/zkl/skleralnye-linzy/uhod-za-skleralnymi-linzami-linz-ochki">Уход</a>
+                                    <a href="/skleralnye-linzy.php">Подробнее</a>
+                                    <a href="/skleralnye-linzy-prices.php">Цены</a>
+                                    <a href="/selection-skleralnye-linzy.php">Процесс подбора</a>
+                                    <a href="/skleralnye-linzy-keratoconus.php">При кератоконусе</a>
+                                    <a href="/skleralnye-linzy-dry-eyes.php">При сухом глазе</a>
+                                    <a href="/skleralnye-linzy-care.php">Уход</a>
                                 </div>
                             </div>
                         </div>
@@ -189,10 +189,10 @@ $pageDescription = 'Подбор жёстких контактных линз в
 
                                 <div class="lens-links">
                                     <a href="/rogovichnye-page.php">Подробнее</a>
-                                    <a href="/zkl/rogovichnye-linzy/ceny-na-rogovichnye-linzy-v-sankt-peterburge-linz-ochki">Цены</a>
-                                    <a href="/zkl/rogovichnye-linzy/process-podbora-rogovichnyh-linz-v-sankt-peterburge-linz-ochki">Процесс подбора</a>
-                                    <a href="/zkl/rogovichnye-linzy/rogovichnye-linzy-pri-astigmatizme-v-sankt-peterburge-linz-ochki">При астигматизме</a>
-                                    <a href="/zkl/rogovichnye-linzy/uhod-za-rogovichnymi-linzami-linz-ochki">Уход</a>
+                                    <a href="/rogovichnye-prices.php">Цены</a>
+                                    <a href="/selection-rogovichnye-lenses.php">Процесс подбора</a>
+                                    <a href="/rogovichnye-astigmatism.php">При астигматизме</a>
+                                    <a href="/rogovichnye-care.php">Уход</a>
                                 </div>
                             </div>
                         </div>

@@ -1,0 +1,29 @@
+
+
+@media (max-width: 650px) {
+    .welcome_lens_contant {
+        background-size: auto;
+        background-position: top;
+    }
+    .welcome_lens_contant_text {
+        padding: 0 20px;
+        margin: 0 !important;
+    }
+    .welcome_lens_contant_gradient {
+        background: linear-gradient(0deg, #D4EDFC 60%, #D4EDFC00 80%);
+    }
+    .welcome_lens_contant {
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    background-size: auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: #D4EDFC;
+}
+}

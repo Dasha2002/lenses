@@ -66,6 +66,12 @@
 @import "/includes/contraindications-for-orthokeratology-lenses-page/contraindications-for-orthokeratology-lenses.css";
 
 
+
+@import "/includes/rogovichnye-prices/rogovichnye-prices.css";
+
+@import "/includes/rogovichnye-care/rogovichnye-care.css";
+
+
 html {
   scroll-behavior: smooth;
 }

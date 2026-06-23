@@ -1,0 +1,38 @@
+.mainSeoContainer .headerSeoContainer .image-kids {
+    max-width: 55%;
+    position: absolute;
+    top: 50%;
+    height: max-content;
+    width: 100%;
+    right: 0px;
+    bottom: 0px;
+    translate: 0px -50%;
+}
+.mainSeoContainer .headerSeoContainer .image-kids img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .mainSeoContainer .headerSeoContainer .image-kids {
+    position: absolute;
+    top: 50%;
+    opacity: 0.2;
+    height: max-content;
+    width: 100%;
+    right: 0px;
+    bottom: 0px;
+    translate: 0px -50%;
+}
+}
+
+@media (max-width: 760px) {
+    .mainSeoContainer .headerSeoContainer .image-kids {
+        max-width: 100%;
+        opacity: 0.2;
+        top: unset;
+        translate: unset;
+        bottom: -10px;
+        left: 0;
+    }
+}

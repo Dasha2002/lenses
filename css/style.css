@@ -58,7 +58,12 @@
 @import "/includes/rogovichnye-8/rogovichnye-8.css";
 @import "/includes/rogovichnye-9/rogovichnye-9.css";
 
+
 @import "/includes/ortokeratologiya-prices-page/ortokeratologiya.css";
+@import "/includes/selection-orthokeratological-lenses-page/selection-orthokeratological-lenses.css";
+@import "/includes/orthokeratological-kids-page/orthokeratological-kids.css";
+@import "/includes/care-for-orthokeratology-lenses-page/care-for-orthokeratology-lenses.css";
+@import "/includes/contraindications-for-orthokeratology-lenses-page/contraindications-for-orthokeratology-lenses.css";
 
 
 html {

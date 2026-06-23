@@ -119,10 +119,10 @@ $pageDescription = 'Подбор жёстких контактных линз в
                                 <div class="lens-links">
                                     <a href="/ortokeratologiya-nochnye-linzy.php">Подробнее</a>
                                     <a href="/ortokeratologiya-prices.php">Цены</a>
-                                    <a href="/zkl/ortokeratologiya-nochnye-linzy/process-podbora-ortokeratologicheskih-linz-v-sankt-peterburge-linz-ochki">Процесс подбора</a>
-                                    <a href="/zkl/ortokeratologiya-nochnye-linzy/ortokeratologicheskie-linzy-dlya-detej-v-sankt-peterburge">Для детей</a>
-                                    <a href="/zkl/ortokeratologiya-nochnye-linzy/uhod-za-ortokeratologicheskimi-linzami-linz-ochki">Уход</a>
-                                    <a href="/zkl/ortokeratologiya-nochnye-linzy/protivopokazaniya-i-oslozhneniya-ortokeratologicheskih-linz-linz-ochki">Противопоказания</a>
+                                    <a href="/selection-orthokeratological-lenses.php">Процесс подбора</a>
+                                    <a href="/orthokeratological-kids.php">Для детей</a>
+                                    <a href="/care-for-orthokeratology-lenses.php">Уход</a>
+                                    <a href="/contraindications-for-orthokeratology-lenses.php">Противопоказания</a>
                                 </div>
                             </div>
                         </div>

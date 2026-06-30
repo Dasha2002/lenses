@@ -12,7 +12,7 @@
             <a href="/portfolio.php">Наши специалисты</a>
             <a href="/articles.php">Статьи</a>
             <a href="/kontakty.php">Контакты</a>
-            <a href="/reviews">Отзывы</a>
+            <a href="/reviews.php">Отзывы</a>
         </nav>
 
         <div class="header-top__right">

@@ -6,7 +6,7 @@
             <div class="g-article-list">
                 <article class="g-article">
                     <time class="g-article__date">13.11.2025</time>
-                    <a class="g-article__name" href="#">Возрастная дальнозоркость: мифы и реальность</a>
+                    <a class="g-article__name" href="/article.php">Возрастная дальнозоркость: мифы и реальность</a>
                     <div class="g-article__body">
                         <div class="g-article__image">
                             <a href="#"><img src="/assets/41-0.webp" alt="Возрастная дальнозоркость: мифы и реальность"></a>
@@ -23,7 +23,7 @@
 
                 <article class="g-article">
                     <time class="g-article__date">13.11.2025</time>
-                    <a class="g-article__name" href="#">Как выбрать удобные очки, которые не доставляют дискомфорта</a>
+                    <a class="g-article__name" href="/article.php">Как выбрать удобные очки, которые не доставляют дискомфорта</a>
                     <div class="g-article__body">
                         <div class="g-article__image">
                             <a href="#"><img src="/assets/40-0.webp" alt="Как выбрать удобные очки"></a>
@@ -40,7 +40,7 @@
 
                 <article class="g-article">
                     <time class="g-article__date">13.11.2025</time>
-                    <a class="g-article__name" href="#">Как сохранить зрение на долгие годы: советы от Линз-Очки</a>
+                    <a class="g-article__name" href="/article.php">Как сохранить зрение на долгие годы: советы от Линз-Очки</a>
                     <div class="g-article__body">
                         <div class="g-article__image">
                             <a href="#"><img src="/assets/39-0.webp" alt="Как сохранить зрение"></a>
@@ -57,7 +57,7 @@
 
                 <article class="g-article">
                     <time class="g-article__date">13.11.2025</time>
-                    <a class="g-article__name" href="#">Как работают ночные линзы и кому они подойдут?</a>
+                    <a class="g-article__name" href="/article.php">Как работают ночные линзы и кому они подойдут?</a>
                     <div class="g-article__body">
                         <div class="g-article__image">
                             <a href="#"><img src="/assets/38-0.webp" alt="Ночные линзы"></a>
@@ -74,7 +74,7 @@
 
                 <article class="g-article">
                     <time class="g-article__date">13.11.2025</time>
-                    <a class="g-article__name" href="#">Лучшие очки для осени и зимы: какие выбрать и как ухаживать</a>
+                    <a class="g-article__name" href="/article.php">Лучшие очки для осени и зимы: какие выбрать и как ухаживать</a>
                     <div class="g-article__body">
                         <div class="g-article__image">
                             <a href="#"><img src="/assets/35-1.webp" alt="Очки для осени и зимы"></a>
@@ -96,7 +96,7 @@
             <div class="g-article-list">
                 <article class="g-article">
                     <time class="g-article__date">13.11.2025</time>
-                    <a class="g-article__name" href="#">В чем разница между дорогими и дешевыми очками — раскладываем по полочкам!</a>
+                    <a class="g-article__name" href="/article.php">В чем разница между дорогими и дешевыми очками — раскладываем по полочкам!</a>
                     <div class="g-article__body">
                         <div class="g-article__image">
                             <a href="#"><img src="/assets/30-1.webp" alt="Разница между очками"></a>
@@ -113,7 +113,7 @@
 
                 <article class="g-article">
                     <time class="g-article__date">13.11.2025</time>
-                    <a class="g-article__name" href="#">Питание для глаз: действительно ли еда спасает зрение?</a>
+                    <a class="g-article__name" href="/article.php">Питание для глаз: действительно ли еда спасает зрение?</a>
                     <div class="g-article__body">
                         <div class="g-article__image">
                             <a href="#"><img src="/assets/30-1.webp" alt="Питание для глаз"></a>
@@ -130,7 +130,7 @@
 
                 <article class="g-article">
                     <time class="g-article__date">13.11.2025</time>
-                    <a class="g-article__name" href="#">5 шагов для сохранения детского зрения: советы от Линз-Очки</a>
+                    <a class="g-article__name" href="/article.php">5 шагов для сохранения детского зрения: советы от Линз-Очки</a>
                     <div class="g-article__body">
                         <div class="g-article__image">
                             <a href="#"><img src="/assets/30-1.webp" alt="Детское зрение"></a>
@@ -147,7 +147,7 @@
 
                 <article class="g-article">
                     <time class="g-article__date">13.11.2025</time>
-                    <a class="g-article__name" href="#">Как подобрать очки для астигматизма? Советы от экспертов</a>
+                    <a class="g-article__name" href="/article.php">Как подобрать очки для астигматизма? Советы от экспертов</a>
                     <div class="g-article__body">
                         <div class="g-article__image">
                             <a href="#"><img src="/assets/30-1.webp" alt="Очки для астигматизма"></a>
@@ -164,7 +164,7 @@
 
                 <article class="g-article">
                     <time class="g-article__date">13.11.2025</time>
-                    <a class="g-article__name" href="#">Ваш ребенок не любит носить очки? Узнайте, как помочь ему принять это решение!</a>
+                    <a class="g-article__name" href="/article.php">Ваш ребенок не любит носить очки? Узнайте, как помочь ему принять это решение!</a>
                     <div class="g-article__body">
                         <div class="g-article__image">
                             <a href="#"><img src="/assets/30-1.webp" alt="Ребенок и очки"></a>

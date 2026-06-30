@@ -115,42 +115,42 @@
 
 
         <div class="welcome_link">
-            <a href="/magazin/folder/novinki">
+            <a href="/catalog-page.php">
                 <h4>23</h4>
                 <p>Новинки</p>
                 <div class="img-welcome"><img src="/assets/arrow.svg" alt=""></div>
             </a>
-            <a href="/magazin/folder/myagkie-kontaktnye-linzy">
+            <a href="/catalog-page.php">
                 <h4>80</h4>
                 <p>Мягкие контактные линзы</p>
                 <div class="img-welcome"><img src="/assets/arrow.svg" alt=""></div>
             </a>
-            <a href="/magazin/folder/aksessuary-dlya-kontaktnyh-linz">
+            <a href="/catalog-page.php">
                 <h4>41</h4>
                 <p>Аксессуары для контактных линз</p>
                 <div class="img-welcome"><img src="/assets/arrow.svg" alt=""></div>
             </a>
-            <a href="/magazin/folder/solncezashchitnye-ochki">
+            <a href="/catalog-page.php">
                 <h4>99</h4>
                 <p>Солнцезащитные очки</p>
                 <div class="img-welcome"><img src="/assets/arrow.svg" alt=""></div>
             </a>
-            <a href="/magazin/folder/opravy">
+            <a href="/catalog-page.php">
                 <h4>192</h4>
                 <p>Оправы</p>
                 <div class="img-welcome"><img src="/assets/arrow.svg" alt=""></div>
             </a>
-            <a href="/magazin/folder/ochki-dlya-detej-i-podrostkov">
+            <a href="/catalog-page.php">
                 <h4>17</h4>
                 <p>Очки для детей и подростков</p>
                 <div class="img-welcome"><img src="/assets/arrow.svg" alt=""></div>
             </a>
-            <a href="/magazin/folder/aksessuary-dlya-ochkov">
+            <a href="/catalog-page.php">
                 <h4>8</h4>
                 <p>Аксессуары для очков</p>
                 <div class="img-welcome"><img src="/assets/arrow.svg" alt=""></div>
             </a>
-            <a href="/magazin/folder/tovary-dlya-slabovidyashchih">
+            <a href="/catalog-page.php">
                 <h4>3</h4>
                 <p>Товары для слабовидящих</p>
                 <div class="img-welcome"><img src="/assets/arrow.svg" alt=""></div>

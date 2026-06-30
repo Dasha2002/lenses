@@ -1,0 +1,327 @@
+.cat-filter-popup {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
+
+.cat-filter-popup.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.cat-filter-popup__overlay {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+    pointer-events: auto;
+    margin-bottom: -100vh; 
+}
+
+
+.cat-filter-popup__content {
+    position: relative;
+    z-index: 2;
+    max-width: 420px;
+    width: 100%;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 2px;
+    padding: 38px 30px 30px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.18);
+
+}
+
+
+.cat-filter-popup::-webkit-scrollbar {
+    width: 6px;
+}
+
+.cat-filter-popup::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.cat-filter-popup::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+
+.cat-filter-popup::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Скрытые производители */
+.cat-filter-vendor-hidden {
+    display: none !important;
+}
+
+.cat-filter-vendor-hidden.show {
+    display: flex !important;
+}
+
+/* Кнопка "Показать ещё" */
+.cat-filter-show-more {
+    padding: 12px 20px;
+    margin-top: 10px;
+    border: 1px solid #9adbf9;
+    font-weight: 500;
+    background: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    color: #9adbf9;
+    transition: all 0.2s;
+    position: relative;
+    z-index: 10;
+}
+
+.cat-filter-show-more:hover {
+    background: #9adbf9;
+    color: #2b2e38;
+}
+
+.cat-filter-popup__close {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    transition: .2s;
+    z-index: 10;
+}
+
+.cat-filter-popup__close:hover {
+    transform: rotate(90deg);
+}
+
+.cat-filter-popup__close svg {
+    width: 20px;
+    height: 20px;
+}
+
+.cat-filter-popup__title {
+    margin: 0 0 30px;
+    font-size: 26px;
+    line-height: 1;
+    font-weight: 700;
+    color: #2E2F38;
+}
+
+.cat-filter-popup__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.cat-filter-section {
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.cat-filter-section:last-child {
+    border: none;
+}
+
+.cat-filter-section__header {
+    min-height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.cat-filter-section__title {
+    font-size: 15px;
+    color: #4B4E54;
+}
+
+.cat-filter-section__toggle {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #E6E6E6;
+    box-shadow: 0 6px 20px rgba(67, 164, 207, 0.2);
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .25s;
+}
+
+.cat-filter-section__toggle svg {
+    width: 16px;
+    height: 16px;
+    transition: .25s;
+}
+
+.cat-filter-section--active .cat-filter-section__toggle {
+    background: #9ADBF9;
+    border-color: #9ADBF9;
+}
+
+.cat-filter-section--active .cat-filter-section__toggle svg {
+    transform: rotate(45deg);
+    stroke: #3FACE2;
+}
+
+.cat-filter-section__content {
+    display: none;
+    padding: 0 0 20px;
+    animation: fadeFilter .25s;
+}
+
+.cat-filter-section--active .cat-filter-section__content {
+    display: block;
+}
+
+@keyframes fadeFilter {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cat-filter-price-inputs {
+    display: flex;
+    gap: 12px;
+}
+
+.cat-filter-price-input {
+    width: 100%;
+    height: 44px;
+    padding: 0 14px;
+    border: 1px solid #E6E6E6;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: .2s;
+}
+
+.cat-filter-price-input:focus {
+    outline: none;
+    border-color: #3FACE2;
+}
+
+.cat-filter-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.cat-filter-checkbox:last-child {
+    margin-bottom: 0;
+}
+
+.cat-filter-checkbox__input {
+    width: 18px;
+    height: 18px;
+    accent-color: #3FACE2;
+    margin-right: 10px;
+}
+
+.cat-filter-checkbox__label {
+    font-size: 14px;
+    color: #4B4E54;
+}
+
+.cat-filter-select {
+    width: 100%;
+    height: 44px;
+    border: 1px solid #E6E6E6;
+    border-radius: 6px;
+    padding: 0 14px;
+    font-size: 14px;
+    background: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.cat-filter-select:focus {
+    outline: none;
+    border-color: #3FACE2;
+}
+
+.cat-filter-actions {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cat-filter-actions__submit {
+    height: 52px;
+    background: #9ADBF9;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.cat-filter-actions__submit:hover {
+    background: #3FACE2;
+    color: #fff;
+}
+
+.cat-filter-actions__reset {
+    height: 52px;
+    font-size: 18px;
+    border: 1px solid rgb(154 219 249 / 40%);
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: .2s;
+}
+
+.cat-filter-actions__reset:hover {
+    border-color: #3FACE2;
+    color: #3FACE2;
+}
+
+.cat-filter-actions__reset svg {
+    width: 18px;
+    height: 18px;
+}
+
+.cat-filter-count {
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .cat-filter-popup__content {
+        margin: 0;
+        max-width: 100%;
+        border-radius: 20px 20px 0 0;
+        padding: 60px 20px 30px;
+    }
+    
+    .cat-filter-popup__close {
+        top: 15px;
+        right: 15px;
+    }
+    
+    .cat-filter-popup__title {
+        font-size: 30px;
+    }
+}

@@ -74,6 +74,9 @@
 @import "/includes/dostavka/dostavka.css";
 @import "/includes/kontakty/kontakty.css";
 
+@import "/includes/catalog-page/catalog-page.css";
+@import "/includes/popap-filter-catalog/popap-filter-catalog.css";
+
 :root {
   --brand: #3face2;
 }

@@ -2,7 +2,7 @@
     <div class="news_bac mark"></div>
     <div class="news_header">
         <h2 class="news_header_title">Новости / Статьи</h2>
-        <a href="/stati" class="all_specialists mark">Посмотреть все</a>
+        <a href="/articles.php" class="all_specialists mark">Посмотреть все</a>
     </div>
     <div class="news_contant">
         <a href="/stati/post/vozrastnaya-dalnozorkost-mify-i-realnost" class="news_contant_block">

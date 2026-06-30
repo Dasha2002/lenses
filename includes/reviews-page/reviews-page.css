@@ -1,0 +1,120 @@
+
+.reviews-page {
+    background: linear-gradient(to bottom, #ffffff, #eef5f9);
+    padding: 30px 20px 90px;
+    margin-bottom: 60px;
+}
+
+.reviews-page-block {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.reviews-page-heading {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    color: #2e2f38;
+    margin: 0 0 40px;
+    text-align: left;
+}
+
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+.reviews-card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    max-height: 277px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: max-height 0.4s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.reviews-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+.reviews-card.open {
+    max-height: none;
+    overflow: visible;
+}
+
+.reviews-card__author {
+    font-size: 18px;
+    font-weight: 400;
+    color: #3FACE2;
+    margin: 0 0 4px;
+}
+
+.reviews-card__date {
+    display: block;
+    font-size: 14px;
+    color: #d9d9d9;
+    margin-bottom: 20px;
+}
+
+.reviews-card__text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #2e2f38;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+.reviews-card__gradient {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
+    background: linear-gradient(to top, #ffffff 50%, rgba(255, 255, 255, 0));
+    pointer-events: none;
+}
+
+.reviews-card.has-more .reviews-card__gradient {
+    display: block;
+}
+
+
+.reviews-card.open .reviews-card__gradient {
+    display: none;
+}
+
+
+@media (max-width: 1200px) {
+    .reviews-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .reviews-page {
+        padding: 30px 20px 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .reviews-page-heading {
+        font-size: 26px;
+    }
+}

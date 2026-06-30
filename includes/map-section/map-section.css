@@ -15,7 +15,7 @@
   --radius: 24px; /* скругление карты */
   --card-radius: 16px; /* скругление карточек */
 
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
   padding: 0 50px;
   box-sizing: border-box;
   position: relative;
@@ -80,17 +80,16 @@
 
         img,
         .svg-icon {
-          width: 26px;
-          height: 26px;
+          width: 32px;
+          height: 32px;
           flex: 0 0 auto;
-          margin-top: 2px;
         }
         .svg-icon {
           color: #7b828a;
         }
 
         span {
-          font-size: 19px;
+        font-size: 28px;
           font-weight: 700;
           line-height: 1.25;
         }
@@ -100,6 +99,7 @@
       h4 {
         margin: 0 0 16px;
         font-size: 14px;
+        padding-left: 40px;
         line-height: 1.5;
         font-weight: 400;
         color: #3f3f3f;

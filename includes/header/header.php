@@ -4,14 +4,14 @@
     <div class="header-top">
         <nav class="header-top__nav">
             <a href="/">Главная</a>
-            <a href="/dostavka">Доставка</a>
-            <a href="/services">Услуги</a>
+            <a href="/dostavka.php">Доставка</a>
+            <a href="/services.php">Услуги</a>
             <a href="/payment-page.php">Оплата</a>
             <a href="/stock-page.php">Акции</a>
             <a href="/certificates.php">Подарочные сертификаты</a>
-            <a href="/portfolio">Наши специалисты</a>
-            <a href="/article.php">Статьи</a>
-            <a href="/kontakty">Контакты</a>
+            <a href="/portfolio.php">Наши специалисты</a>
+            <a href="/articles.php">Статьи</a>
+            <a href="/kontakty.php">Контакты</a>
             <a href="/reviews">Отзывы</a>
         </nav>
 

@@ -70,7 +70,13 @@
 @import "/includes/rogovichnye-prices/rogovichnye-prices.css";
 
 @import "/includes/rogovichnye-care/rogovichnye-care.css";
+@import "/includes/specialists-list/specialists-list.css";
+@import "/includes/dostavka/dostavka.css";
+@import "/includes/kontakty/kontakty.css";
 
+:root {
+  --brand: #3face2;
+}
 
 html {
   scroll-behavior: smooth;

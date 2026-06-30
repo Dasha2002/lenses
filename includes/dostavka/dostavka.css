@@ -1,0 +1,97 @@
+.dostavka__section {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 70px 80px 70px;
+  gap: 40px;
+  background: linear-gradient(to bottom, #FFFFFF, #EEF5F9) !important;
+
+  h1 {
+    font-size: 36px;
+    width: fit-content;
+    margin: 0 0 20px 0;
+    color: #2e2f38;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0 0 32px 0;
+    color: #3f3f3f;
+  }
+
+  .dostavka__content-container {
+    display: flex;
+    width: 100%;
+    border: 1px solid var(--brand);
+    padding: 0;
+    box-sizing: border-box;
+
+    .dostavka__content-left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: flex-start;
+      border-radius: 50%;
+      margin: 0 36px 0 0;
+      padding: 25px;
+      background: rgba(44, 172, 226, 0.2);
+      flex: 0 0 auto;
+    }
+
+    .dostavka__content {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+
+      h2 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        margin: 0 0 20px 0;
+        color: #2e2f38;
+      }
+
+      .dostavka__content-block {
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid rgba(63, 63, 63, 0.1);
+        padding-top: 24px;
+        margin-top: 12px;
+        
+        &:nth-child(2) {
+            border-top: none;
+        }
+
+        &:last-child {
+            margin-bottom: 20px;
+        }
+
+        h3 {
+          font-size: 20px;
+          color: #2e2f38;
+          margin: 0 0 20px 0;
+        }
+
+        p {
+          margin: 0;
+          font-size: 18px;
+        }
+
+        ul {
+          list-style: none;
+          margin: 0;
+
+          li {
+            background: url("/includes/dostavka/assets/galka_blue.webp") no-repeat scroll 0px / auto 25px;
+            list-style-type: none;
+            padding: 5px 1px 5px 40px !important;
+            margin-left: 30px;
+            color: #3f3f3f;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

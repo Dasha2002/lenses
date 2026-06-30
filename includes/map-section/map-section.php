@@ -10,8 +10,8 @@
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="icon-pin" viewBox="0 0 24 24">
-      <path d="M12 2C8.27 2 5.25 5.02 5.25 8.75c0 4.85 6.05 12.1 6.31 12.41a.57.57 0 0 0 .88 0c.26-.31 6.31-7.56 6.31-12.41C18.75 5.02 15.73 2 12 2Z" fill="none" stroke="currentColor" stroke-width="1.6"/>
-      <circle cx="12" cy="8.75" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <path d="M12 2C8.27 2 5.25 5.02 5.25 8.75c0 4.85 6.05 12.1 6.31 12.41a.57.57 0 0 0 .88 0c.26-.31 6.31-7.56 6.31-12.41C18.75 5.02 15.73 2 12 2Z" color="black" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <circle cx="12" cy="8.75" r="2.6" color="black" fill="none" stroke="currentColor" stroke-width="1.6"/>
     </symbol>
   </defs>
 </svg>

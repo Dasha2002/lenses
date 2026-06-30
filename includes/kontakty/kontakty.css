@@ -1,0 +1,136 @@
+.kontakty__main {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  padding: 50px 70px 80px 70px;
+  background: linear-gradient(to bottom, #ffffff, #eef5f9) !important;
+
+  .kontakty__content-container {
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    border: 1px solid var(--brand);
+    padding: 20px;
+    box-sizing: border-box;
+
+    .kontakty__place {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+
+      h3 {
+        color: var(--brand);
+        margin: 0 0 20px 0;
+        font-size: 20px;
+      }
+
+      .kontakty__info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: #3f3f3f;
+
+        address {
+          font-style: normal !important;
+        }
+
+        a {
+          font-size: 18px;
+          color: #2e2f38;
+          text-decoration: none;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .kontakty__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+    padding-left: 0 !important;
+
+    .kontakty__variant {
+      font-size: 18px;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+        color: #3f3f3f;
+
+        .kontakty__variant-img-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #ebf2fe;
+          width: 50px;
+          height: 50px;
+          border-radius: 6px;
+
+          .kontakty__variant-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
+          }
+        }
+      }
+    }
+  }
+
+  .kontakty__details {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    .kontakty__details-title {
+      font-size: 36px;
+      margin: 0 0 28px 0;
+      color: #2e2f38;
+      width: fit-content;
+    }
+
+    .kontakty__details-content {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      color: #4b4e54;
+    }
+
+    .kontakty__details-name {
+      font-size: 16px;
+      margin: 0;
+      font-weight: 500;
+      color: #4b4e54;
+    }
+
+    .kontakty__details-row {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 16px;
+    }
+
+    .kontakty__details-label {
+      min-width: 200px;
+      font-weight: 500;
+      color: #4b4e54;
+    }
+
+    .kontakty__details-value {
+      color: #4b4e54;
+    }
+
+    .kontakty__details-license {
+      color: rgb(12, 112, 161);
+      text-decoration: underline;
+      font-size: 16px;
+    }
+  }
+
+  .map {
+    padding: 0;
+  }
+}

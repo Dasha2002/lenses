@@ -1,0 +1,170 @@
+.specialists__title {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: left;
+  color: #2e2f38;
+  width: fit-content;
+  margin: 0 0 20px 0;
+}
+
+.specialists__list {
+  --brand: #3face2;
+  --ink: #23262b; /* имя */
+  --role: #6b7177; /* специальность */
+  --team-bg: #e9f1f6; /* подложка карточки + цвет градиента */
+  --arrow-bg: #d6eefb; /* фон круглых стрелок */
+
+  --radius: 18px;
+
+  --photo-h: 300px;
+  --photo-fade: 150px;
+  --overlap: 110px;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px 10px;
+
+  .specialists__card-wrapper {
+    display: flex;
+    height: auto;
+    .specialist_card {
+      position: relative;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      /* ВЕРХ: фото + градиент (= _header + _header_gradient) */
+      .specialist_card_header {
+        position: relative;
+        z-index: 2; /* фото перед подложкой */
+        height: var(--photo-h); /* фикс. высота → подложка одинаковая */
+
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: contain; /* фигура целиком, без обрезки */
+          object-position: bottom center;
+        }
+
+        /* градиент: цвет подложки снизу → прозрачный кверху */
+        .specialist_card_header_gradient {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: var(--photo-fade);
+          background: linear-gradient(to top, var(--team-bg) 0%, rgba(233, 241, 246, 0) 100%);
+          pointer-events: none;
+        }
+      }
+
+      /* НИЗ: цветной блок с контентом (= _contant) */
+      .specialist_card_body {
+        position: relative;
+        z-index: 1; /* за фото */
+        flex: 1; /* тянется → одинаковая высота у всех */
+        margin-top: calc(-1 * var(--overlap)); /* заезжает под фото */
+        padding: calc(var(--overlap) + 16px) 22px 22px;
+        background: var(--team-bg);
+        border-radius: var(--radius);
+        display: flex;
+        flex-direction: column;
+
+        .specialist_card_info {
+          /* без z-index: имя/специальность кликаются через оверлей-ссылку */
+
+          .specialist_card_name {
+            margin: 0;
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 1.3;
+            color: var(--ink);
+          }
+
+          .specialist_card_role {
+            margin: 8px 0 0;
+            font-size: 14px;
+            line-height: 1.35;
+            color: var(--role);
+          }
+
+          .specialist_card_place {
+            display: block;
+            margin-top: 10px;
+
+            a {
+              position: relative;
+              z-index: 2; /* над оверлей-ссылкой → кликается отдельно */
+              font-size: 14px;
+              line-height: 1.3;
+              font-weight: 600;
+              color: var(--brand);
+              text-decoration: none;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+
+        /* кнопка записи — прижата к низу */
+        .specialist_card_btn {
+          position: relative;
+          z-index: 2; /* над оверлей-ссылкой */
+          margin-top: auto;
+          padding-top: 20px;
+
+          .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 0;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            color: #fff;
+            background: var(--brand);
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.15s ease;
+            padding: 10px 20px;
+
+            &:hover {
+              background: var(--brand);
+            }
+          }
+        }
+
+        /* ссылка-оверлей на весь блок контента (= .linkPersonal) */
+        .specialist_card_link {
+          position: absolute;
+          inset: 0;
+          z-index: 1;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1290px) {
+    grid-template-columns: repeat(4, 1fr);
+    
+  }
+
+  @media (max-width: 1110px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 650px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+
+    .btn {
+      width: unset;
+    }
+  }
+}

@@ -12,12 +12,12 @@
                 <p class="thanks_block_text_paragraph">Эта благодарность отмечает профессионализм нашей команды, внимательное отношение к пациентам и вклад в развитие современных решений для коррекции зрения и контроля прогрессирующей близорукости.</p>
             </div>
             <div class="thanks_images">
-                <a href="includes/thanks/assets/thanks_1.webp" class="thanks_image" data-fancybox="thanks">
+                <div class="thanks_image" data-fancybox="thanks">
                     <img src="includes/thanks/assets/thanks_1.webp" alt="Благодарность ACUVUE Линз-Очки за продвижение Abiliti 1-Day">
-                </a>
-                <a href="includes/thanks/assets/thanks_2.webp" class="thanks_image" data-fancybox="thanks">
+                </div>
+                <div class="thanks_image" data-fancybox="thanks">
                     <img src="includes/thanks/assets/thanks_2.webp" alt="Награда Линз-Очки Забота о пациентах с ACUVUE 2025">
-                </a>
+                </div>
             </div>
         </div>
     </div>

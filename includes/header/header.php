@@ -10,7 +10,7 @@
             <a href="/stock-page.php">Акции</a>
             <a href="/certificates.php">Подарочные сертификаты</a>
             <a href="/portfolio">Наши специалисты</a>
-            <a href="/article.php">Статьи</a>
+            <a href="/articles.php">Статьи</a>
             <a href="/kontakty">Контакты</a>
             <a href="/reviews">Отзывы</a>
         </nav>

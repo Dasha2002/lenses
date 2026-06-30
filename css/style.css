@@ -71,6 +71,9 @@
 
 @import "/includes/rogovichnye-care/rogovichnye-care.css";
 
+@import "/includes/catalog-page/catalog-page.css";
+@import "/includes/popap-filter-catalog/popap-filter-catalog.css";
+
 
 html {
   scroll-behavior: smooth;

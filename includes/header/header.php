@@ -35,7 +35,7 @@
     <!-- Основная часть -->
     <div class="header-main">
 
-        <a href="/" class="header-logo">
+        <a href="/login-page.php" class="header-logo">
             <img src="/assets/logo.svg" alt="">
             <div class="header-logo__text">
                 <span>Сеть салонов оптики</span>

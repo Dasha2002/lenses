@@ -1,0 +1,31 @@
+.g-user-profile__item {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: .35714em .71429em;
+    font-size: .93333em;
+    line-height: 1.2em;
+    cursor: pointer;
+    vertical-align: top;
+    text-decoration: none !important;
+    color: #15c;
+    border: 1px solid transparent;
+    border-radius: 13px;
+    margin-bottom: 6px;
+}
+.g-user-profile--opened {
+    color: #fff!important;
+    background-color: #15c;
+}
+.g-user__button-account {
+    width: auto !important;
+}
+.user__home-page {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.account-thre-block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

@@ -83,7 +83,7 @@
 @import "/includes/login-page/login-page.css";
 @import "/includes/registration/registration.css";
 @import "/includes/forgot-password/forgot-password.css";
-
+@import "/includes/account/account.css";
 
 :root {
   --brand: #3face2;

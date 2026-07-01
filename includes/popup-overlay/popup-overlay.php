@@ -16,7 +16,7 @@
             <input type="text" class="auth-input" placeholder="Логин" required>
             <input type="password" class="auth-input" placeholder="Пароль" required>
 
-            <a href="#" class="auth-forgot">Забыли пароль?</a>
+            <a href="/forgot-password-page.php" class="auth-forgot">Забыли пароль?</a>
 
             <div class="auth-buttons">
                 <button type="submit" class="auth-btn auth-btn-primary">Войти</button>

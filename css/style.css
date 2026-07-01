@@ -82,6 +82,7 @@
 
 @import "/includes/login-page/login-page.css";
 @import "/includes/registration/registration.css";
+@import "/includes/forgot-password/forgot-password.css";
 
 
 :root {

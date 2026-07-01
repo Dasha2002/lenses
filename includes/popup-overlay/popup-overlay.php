@@ -20,7 +20,7 @@
 
             <div class="auth-buttons">
                 <button type="submit" class="auth-btn auth-btn-primary">Войти</button>
-                <a href="#" class="auth-btn auth-btn-secondary">Регистрация</a>
+                <a href="/registration-page.php" class="auth-btn auth-btn-secondary">Регистрация</a>
             </div>
 
             <div class="auth-social">

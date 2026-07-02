@@ -177,21 +177,95 @@
 
     <!-- Бренды -->
     <div class="header-brands">
-
         <button class="brands-toggle">
             Бренды A-Z
         </button>
 
         <div class="brands-header-list">
-            <a href="/vse-brendy?group=a">A</a>
-            <a href="/vse-brendy?group=b">B</a>
-            <a href="/vse-brendy?group=c">C</a>
-            <a href="/vse-brendy?group=j">J</a>
-            <a href="/vse-brendy?group=m">M</a>
-            <a href="/vse-brendy?group=o">O</a>
+            <div class="brand-letter-item">
+                <a href="/vse-brendy?group=a" class="brand-letter">A</a>
+                <div class="brand-dropdown">
+                    <div class="brand-dropdown__brands">
+                        <a href="#">Alcon</a>
+                        <a href="#">Avizor</a>
+                        <a href="#">Adria</a>
+                        <a href="#">All View</a>
+                        <a href="#">Arien</a>
+                        <a href="#">Another Brand</a>
+                        <a href="#">Alpha Optics</a>
+                    </div>
+                    <div class="brand-dropdown__big-letter">A</div>
+                </div>
+            </div>
+
+            <div class="brand-letter-item">
+                <a href="/vse-brendy?group=b" class="brand-letter">B</a>
+                <div class="brand-dropdown">
+                    <div class="brand-dropdown__brands">
+                        <a href="#">Bausch&Lomb</a>
+                        <a href="#">Belmore</a>
+                        <a href="#">Blue Eyes</a>
+                        <a href="#">Biolite</a>
+                        <a href="#">Brimstone</a>
+                    </div>
+                    <div class="brand-dropdown__big-letter">B</div>
+                </div>
+            </div>
+
+            <div class="brand-letter-item">
+                <a href="/vse-brendy?group=c" class="brand-letter">C</a>
+                <div class="brand-dropdown">
+                    <div class="brand-dropdown__brands">
+                        <a href="#">Cooper Vision</a>
+                        <a href="#">Ciba Vision</a>
+                        <a href="#">Carl Zeiss</a>
+                        <a href="#">Contact Day</a>
+                        <a href="#">Crystal Clear</a>
+                    </div>
+                    <div class="brand-dropdown__big-letter">C</div>
+                </div>
+            </div>
+
+            <div class="brand-letter-item">
+                <a href="/vse-brendy?group=j" class="brand-letter">J</a>
+                <div class="brand-dropdown">
+                    <div class="brand-dropdown__brands">
+                        <a href="#">Johnson & Johnson</a>
+                        <a href="#">J&J Acuvue</a>
+                        <a href="#">Jins</a>
+                    </div>
+                    <div class="brand-dropdown__big-letter">J</div>
+                </div>
+            </div>
+
+            <div class="brand-letter-item">
+                <a href="/vse-brendy?group=m" class="brand-letter">M</a>
+                <div class="brand-dropdown">
+                    <div class="brand-dropdown__brands">
+                        <a href="#">Menicon</a>
+                        <a href="#">Maxima</a>
+                        <a href="#">MediSine</a>
+                        <a href="#">MyLens</a>
+                        <a href="#">MaxView</a>
+                    </div>
+                    <div class="brand-dropdown__big-letter">M</div>
+                </div>
+            </div>
+
+            <div class="brand-letter-item">
+                <a href="/vse-brendy?group=o" class="brand-letter">O</a>
+                <div class="brand-dropdown">
+                    <div class="brand-dropdown__brands">
+                        <a href="#">Ok Vision</a>
+                        <a href="#">Oftalix</a>
+                        <a href="#">Opti-Free</a>
+                        <a href="#">Ocular</a>
+                        <a href="#">Optima</a>
+                    </div>
+                    <div class="brand-dropdown__big-letter">O</div>
+                </div>
+            </div>
         </div>
-
-
     </div>
 
 </header>
@@ -224,3 +298,14 @@
         </div>
     </div>
 </div>
+
+
+<script>
+    document.querySelectorAll('.brand-letter-item').forEach(item => {
+    item.addEventListener('mouseenter', function() {
+        const dropdown = this.querySelector('.brand-dropdown');
+        const rect = this.getBoundingClientRect();
+        dropdown.style.top = rect.bottom + 'px';
+    });
+});
+</script>

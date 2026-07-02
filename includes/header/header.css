@@ -456,6 +456,87 @@
     color: #4a90e2;
 }
 
+/* Стили для выпадающих списков брендов */
+.brand-letter-item {
+    position: static; /* Убираем relative */
+}
+
+.brand-letter {
+    color: #2e2f38;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 5px 10px;
+    transition: color 0.3s;
+    display: inline-block;
+}
+
+.brand-letter:hover {
+    color: #3FACE2;
+}
+
+.brand-dropdown {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: white;
+    padding: 30px 40px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.brands-header-list {
+    position: relative; 
+}
+
+.brand-letter-item:hover .brand-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.brand-dropdown__brands {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.brand-dropdown__brands a {
+    color: #2e2f38;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 16px;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.brand-dropdown__brands a:hover {
+    color: #3FACE2;
+}
+
+.brand-dropdown__big-letter {
+    font-size: 140px;
+    font-weight: 900;
+    color: #D4EDFC;
+    line-height: 1;
+    text-align: left;
+    user-select: none;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .brand-dropdown {
+        display: none !important;
+    }
+}
+
 /* Фиксированная шапка при скролле */
 .header-fixed {
     position: fixed;
